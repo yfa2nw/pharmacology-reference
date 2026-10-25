@@ -1,0 +1,254 @@
+:root{
+    /* color palette - Okabe-Ito colorblind-friendly*/
+    --bg:#f6f7f9;
+    --pn:#fff;
+    --tx:#1b2430;
+    --mu:#5d6978;
+    --ln:#d8dde4;
+    --b:#0072B2;
+    --bs:#e1f0f9;
+    --o:#E69F00;
+    --os:#fdf1d6;
+    --k:#1b2430;
+    --ks:#fff;
+    --p:#CC79A7;
+    --ps:#f8e8f1;
+    --s:#56B4E9
+}
+
+/* dark-mode */
+@media(prefers-color-scheme:dark){
+    :root{
+        --bg:#12161c;
+        --pn:#1b2129;
+        --tx:#e8ecf1;
+        --mu:#9aa6b4;
+        --ln:#323a45;
+        --bs:#12354a;
+        --os:#4a3a0c;
+        --k:#f2f4f7;
+        --ks:#12161c;
+        --ps:#47263a
+    }
+}
+
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font:15px/1.5 "Segoe UI",system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--tx);
+    display:flex;
+    min-height:100vh
+}
+nav{
+    width:270px;
+    flex:none;
+    border-right:1px solid var(--ln);
+    background:var(--pn);
+    padding:14px;
+    position:sticky;
+    top:0;
+    height:100vh;
+    overflow:auto
+}
+nav input{
+    width:100%;
+    padding:8px 10px;
+    border:1px solid var(--ln);
+    border-radius:8px;
+    background:var(--bg);
+    color:var(--tx);
+    font:inherit
+}
+nav details{margin-top:8px}
+nav summary{cursor:pointer;font-weight:700}
+nav details details{margin-left:10px}
+nav summary+*{margin-top:4px}
+nav a{
+    display:block;
+    padding:4px 10px;
+    border-radius:6px;
+    color:var(--tx);
+    text-decoration:none
+}
+nav a:hover{background:var(--bg)}
+nav a.on{background:var(--b);color:#fff}
+
+main{flex:1;padding:24px;max-width:1000px;min-width:0}
+h1{margin:0;font-size:28px}
+h2{font-size:17px;margin:28px 0 10px;padding-left:10px;border-left:5px solid var(--b)}
+
+.sub{color:var(--mu);margin:2px 0 10px}
+
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--bs);border:1px solid var(--b);border-radius:99px;padding:2px 11px;font-size:14px}
+
+.flow{display:flex;gap:0;align-items:stretch;flex-wrap:wrap}
+
+.step{flex:1 1 200px;background:var(--pn);border:1px solid var(--ln);border-radius:10px;padding:10px 12px}
+.step b{display:block;font-size:12px;color:var(--mu)}
+.arr{align-self:center;padding:0 6px;font-size:22px;color:var(--b)}
+.step b.ar{display:inline-grid;font-size:inherit}
+.step.t{border-top:4px solid var(--b)}
+.step.m{border-top:4px solid var(--p);flex-grow:2}
+.step.r{border-top:4px solid var(--o)}
+
+.tier{display:flex;gap:10px;margin:6px 0;align-items:flex-start}
+.tier .lab{flex:none;width:96px;font-weight:700;display:flex;gap:6px;align-items:center}
+.tier ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.tier li{padding:2px 10px;border-radius:6px;border:2px solid}
+
+.c li{background:var(--bs);border-color:var(--b)}
+.s li{background:var(--os);border-color:var(--o);border-style:dashed}
+.l li{background:var(--k);color:var(--ks);border-color:var(--k);font-weight:600}
+
+.contra{background:var(--ps);border:2px solid var(--p);border-radius:10px;padding:8px 14px}
+.contra ul{margin:4px 0;padding-left:20px}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--pn);
+    border:1px solid var(--ln);
+    border-radius:10px;overflow:hidden
+}
+th,td{
+    text-align:left;
+    padding:7px 12px;
+    border-bottom:1px solid var(--ln);
+    vertical-align:top
+}
+th{width:32%;color:var(--mu);font-weight:600;background:var(--bg)}
+
+.tw{overflow-x:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+
+.glance{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+
+.rk{padding:4px 12px;border-radius:8px;font-weight:700;border:2px solid var(--ln);color:var(--mu)}
+.rk.avoid{background:#B94A00;border-color:#B94A00;color:#fff}
+.rk.caution{background:var(--os);border:2px dashed var(--o);color:var(--tx)}
+.rk.ok{background:var(--bs);border-color:var(--b);color:var(--tx)}
+
+.cell{background:var(--pn);border:1px solid var(--ln);border-radius:10px;overflow:hidden}
+.cell .rl{padding:3px 10px;font-size:13px;font-weight:800;background:var(--bg)}
+.cell .cb{padding:8px 10px}
+.cell.none{opacity:.5}
+.cell.avoid{border:3px solid #B94A00}
+.cell.avoid .rl{background:#B94A00;color:#fff}
+.cell.avoid .cb{font-weight:700}
+.cell.caution{border:2px dashed var(--o)}
+.cell.caution .rl{background:var(--os)}
+.cell.ok,.cell.note{border-left:4px solid var(--b)}
+.cell.ok .rl,.cell.note .rl{background:var(--bs)}
+
+.empty{margin:auto;text-align:center;max-width:420px}
+button,label.btn{
+    background:var(--b);
+    color:#fff;
+    border:0;
+    border-radius:8px;
+    padding:9px 16px;
+    font:inherit;
+    cursor:pointer;
+    display:inline-block
+}
+
+.key{font-size:13px;color:var(--mu);margin-top:20px}
+
+@media(max-width:760px){body{flex-direction:column}nav{width:100%;height:auto;position:static;max-height:42vh}}
+.ar{display:inline-grid;place-items:center;width:1.35em;height:1.35em;border-radius:50%;font-weight:900;line-height:1;margin:0 3px;vertical-align:-.15em}
+.ar.up{background:var(--b);color:#fff}
+.ar.dn{background:var(--o);color:#1b2430}
+
+/* fade on drug switch */
+@media(prefers-reduced-motion:no-preference){.fade{animation:fi .15s ease-out}@keyframes fi{from{opacity:.25}to{opacity:1}}}
+
+/* study mode */
+.tools{display:flex;gap:6px;margin-bottom:8px}.tools button{flex:1;padding:6px 8px;font-size:13px}.tools [hidden]{display:none}
+.tools button[aria-pressed=true]{background:var(--k);color:var(--ks)}
+.study .q:not(.rv){filter:blur(7px);cursor:pointer;user-select:none;outline:2px dashed var(--ln);outline-offset:2px}
+.q:focus-visible{outline:3px solid var(--b)!important;outline-offset:2px}
+
+.vf{display:inline-block;padding:1px 10px;border-radius:99px;font-size:13px;font-weight:700;border:2px solid}
+.vf.ok{background:var(--bs);border-color:var(--b);color:var(--tx)}
+.vf.no{background:var(--os);border:2px dashed var(--o);color:var(--tx)}
+nav a{display:flex;justify-content:space-between;gap:8px}
+.vm{font-weight:700;opacity:.8}
+
+nav input+.tools{margin-top:8px}
+
+/* sidebar layout */
+nav{width:300px;padding:14px 12px}
+#list{margin-top:6px}
+#list summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px}
+#list summary::-webkit-details-marker{display:none}
+#list summary::before{content:"▸";width:1em;color:var(--mu);flex:none}
+#list details[open]>summary::before{transform:rotate(90deg)}
+@media(prefers-reduced-motion:no-preference){#list summary::before{transition:transform .12s}}
+
+/* class level */
+#list>details{margin-top:12px}
+#list>details>summary{padding:8px 10px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--bg);border-left:4px solid var(--b);border-radius:8px}
+
+/* subclass level */
+#list details details{margin:4px 0 4px 12px;padding-left:8px;border-left:2px solid var(--ln)}
+#list details details>summary{padding:5px 8px;font-size:14px;font-weight:700}
+
+/* drugs */
+#list a{padding:6px 10px;margin:1px 0;font-size:14px;font-weight:500;border-radius:6px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+#list a:hover{background:var(--bg)}
+#list a.on{background:var(--b);color:#fff;font-weight:700}
+
+/* counts and verified marks */
+.ct{margin-left:auto;padding:0 8px;font-size:12px;font-weight:700;color:var(--mu);background:var(--pn);border:1px solid var(--ln);border-radius:99px}
+.vm{flex:none;width:1.5em;height:1.5em;display:inline-grid;place-items:center;border-radius:50%;font-size:12px;font-weight:800}
+.vm.y{border:2px solid var(--b)}
+.vm.n{border:2px dashed var(--ln);opacity:.7}
+
+/* class colours */
+.gl{font-style:normal;color:var(--cc);flex:none;filter:drop-shadow(0 0 1px rgba(0,0,0,.45))}
+
+/* sidebar */
+#list>details>summary{border-left-color:var(--cc);background:color-mix(in srgb,var(--cc) 14%,var(--pn))}
+#list>details>summary::before{color:var(--cc)}
+#list details details{border-left-color:color-mix(in srgb,var(--cc) 55%,var(--ln))}
+#list a:hover{background:color-mix(in srgb,var(--cc) 12%,var(--pn))}
+#list a.on{background:color-mix(in srgb,var(--cc) 26%,var(--pn));color:var(--tx);box-shadow:inset 4px 0 0 var(--cc);font-weight:800}
+
+/* drug page */
+main{--cc:#0072B2}
+h1{padding-bottom:6px;border-bottom:4px solid var(--cc)}
+h2{border-left-color:var(--cc)}
+.chip{background:color-mix(in srgb,var(--cc) 16%,var(--pn));border-color:var(--cc)}
+.cbg{display:inline-flex;align-items:center;gap:6px;padding:1px 10px;border-radius:99px;font-weight:800;border:2px solid var(--cc);background:color-mix(in srgb,var(--cc) 16%,var(--pn));color:var(--tx)}
+
+/* calmer palette: one accent (blue) + neutrals; warning colours unchanged */
+
+/* class colours -> neutral grey (shapes still identify the class) */
+#list>details,main{--cc:var(--mu)!important}
+.gl{color:var(--mu);filter:none}
+
+/* sidebar: active drug is the one place with the accent */
+#list a.on{background:var(--b);color:#fff;box-shadow:none;font-weight:700}
+
+/* drug page headings */
+h1{border-bottom-color:var(--b)}
+h2{border-left-color:var(--b)}
+.chip{background:var(--pn);border:1px solid var(--ln)}
+
+/* mechanism flow: same accent on all three boxes */
+.step.t,.step.m,.step.r{border-top-color:var(--b)}
+
+/* contraindications: use the "avoid" colour, since it means the same thing */
+.contra{background:color-mix(in srgb,#B94A00 8%,var(--pn));border:2px solid #B94A00}
+
+/* adverse effects: common becomes neutral so only severe and lethal draw the eye */
+.c li{background:var(--bg);border-color:var(--ln)}
+
+/* "not yet verified" shouldn't compete with the caution colour */
+.vf.no{background:transparent;border:2px dashed var(--ln);color:var(--mu)}
+
+.gl{display:none}
