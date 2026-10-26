@@ -252,3 +252,11 @@ h2{border-left-color:var(--b)}
 .vf.no{background:transparent;border:2px dashed var(--ln);color:var(--mu)}
 
 .gl{display:none}
+
+.ar.up{background:var(--tx);color:var(--bg);border: 1px solid var(--tx)}
+.ar.dn{background:transparent;color:var(--tx);border:1px solid var(--tx)}
+/* inside the dark "lethal" pills, flip the colours so they stay visible */
+.l .ar.up{background:var(--ks);color:var(--k);border-color:var(--ks)}
+.l .ar.dn{color:var(--ks);border-color:var(--ks)}
+.ar.up{background:#E69F00;color:#1b2430}
+.ar.dn{background:#CC79A7;color:#1b2430}
