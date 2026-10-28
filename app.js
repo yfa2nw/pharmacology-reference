@@ -26,7 +26,7 @@ const vf=d=>{const v=d.verified;if(!v)return'<span class="vf no">○ Not yet ver
 
 function show(d){
  $("#main").style.setProperty("--cc",cc(d.cls)[0]);
- $("#main").innerHTML=`<h1>${E(d.name)}</h1><p class="sub">${E(d.brand)} · <span class="cbg"><i class="gl">${cc(d.cls)[1]}</i>${E(d.cls)}</span> › ${E(d.sub||"")} · ${vf(d)}</p>${glance(d)}
+ $("#main").innerHTML=`<h1>${E(d.name)}</h1><p class="sub">${E(d.brand)} · <span class="cbg">${E(d.family)}</span> › ${E(d.cls)}${d.sub?` › ${E(d.sub)}`:""} · ${vf(d)}</p>${glance(d)}
 <h2>Indications</h2><div class="chips">${(d.ind||[]).map(i=>`<span class="chip">${E(i)}</span>`).join("")}</div>
 <h2>Pharmacodynamics</h2><div class="flow"><div class="step t"><b>TARGET</b>${E(d.target)}</div><div class="arr">➜</div><div class="step m"><b>MECHANISM</b>${E(d.moa)}</div><div class="arr">➜</div><div class="step r"><b>RESPONSE</b>${E(d.resp)}</div></div>
 <h2>Adversities</h2><div class="contra"><b>⛔ Contraindications</b>${ul(d.contra)}</div>
@@ -42,11 +42,14 @@ function show(d){
 }
 
 function list(){
- const f=$("#q").value.toLowerCase(),g={};
- DB.filter(d=>JSON.stringify([d.name,d.brand,d.cls,d.sub,d.ind]).toLowerCase().includes(f))
-  .sort((a,b)=>a.cls.localeCompare(b.cls)||(a.sub||"").localeCompare(b.sub||"")||a.name.localeCompare(b.name))
-  .forEach(d=>((g[d.cls]??={})[d.sub||"Indications"]??=[]).push(d));
- $("#list").innerHTML=Object.entries(g).map(([c,s])=>`<details${op(c)} data-k="${E(c)}" style="--cc:${cc(c)[0]}"><summary><i class="gl">${cc(c)[1]}</i>${E(c)} <span class="ct">${Object.values(s).flat().length}</span></summary>${E(c)} <span class="ct">${Object.values(s).flat().length}</span></summary>${Object.entries(s).map(([n,a])=>`<details${op(c+"|"+n)} data-k="${E(c+"|"+n)}"><summary>${E(n)} <span class="ct">${a.length}</span></summary>${a.map(d=>`<a href="#${E(d.id)}" data-id="${E(d.id)}">${E(d.name)} <span class="vm ${d.verified?"y":"n"}">${d.verified?"✓":"○"}</span></a>`).join("")}</details>`).join("")}</details>`).join("")||"<p>No matches.</p>";
+ const f=$("#q").value.toLowerCase(),T={};
+ DB.filter(d=>JSON.stringify([d.name,d.brand,d.family,d.cls,d.sub,d.ind]).toLowerCase().includes(f))
+  .sort((a,b)=>(a.family||"").localeCompare(b.family||"")||a.cls.localeCompare(b.cls)||(a.sub||"").localeCompare(b.sub||"")||a.name.localeCompare(b.name))
+  .forEach(d=>{((T[d.family||"Other"]??={})[d.cls]??={})[d.sub||""]??=[];T[d.family||"Other"][d.cls][d.sub||""].push(d)});
+ const link=d=>`<a href="#${E(d.id)}" data-id="${E(d.id)}">${E(d.name)} <span class="vm ${d.verified?"y":"n"}">${d.verified?"✓":"○"}</span></a>`;
+ const n=x=>Array.isArray(x)?x.length:Object.values(x).reduce((s,v)=>s+n(v),0);
+ const grp=(k,label,lvl,inner,o)=>`<details${op(k)} data-k="${E(k)}" class="L${lvl}"><summary>${E(label)} <span class="ct">${n(o)}</span></summary>${inner}</details>`;
+ $("#list").innerHTML=Object.entries(T).map(([fa,F])=>grp(fa,fa,1,Object.entries(F).map(([c,C])=>grp(fa+"|"+c,c,2,Object.entries(C).map(([s,a])=>s?grp(fa+"|"+c+"|"+s,s,3,a.map(link).join(""),a):a.map(link).join("")).join(""),C)).join(""),F)).join("")||"<p>No matches.</p>";
  route();
 }
 

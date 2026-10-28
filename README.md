@@ -17,7 +17,7 @@ The page is designed to be read quickly: colour-blind-friendly colours, shape an
 - [Data format](#data-format)
 - [Writing conventions](#writing-conventions)
 - [Tutorial: add your first drug](#tutorial-add-your-first-drug)
-- [Tutorial: add a new class](#tutorial-add-a-new-class)
+- [Tutorial: add a new family, class or subclass](#tutorial-add-a-new-family-class-or-subclass)
 - [Tutorial: add a new field](#tutorial-add-a-new-field)
 - [Tutorial: change the look](#tutorial-change-the-look)
 - [The `verified` field](#the-verified-field)
@@ -26,6 +26,7 @@ The page is designed to be read quickly: colour-blind-friendly colours, shape an
 - [Hosting](#hosting)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
+- [Ideas for extension](#ideas-for-extension)
 - [Disclaimer](#disclaimer)
 - [License](#license)
 
@@ -33,8 +34,8 @@ The page is designed to be read quickly: colour-blind-friendly colours, shape an
 
 ## Features
 
-- **One source only:** the webpage is directly linked to the drugs.json file - the html, css, and js codes will parse the json file automatically.
-- **Sidebar navigation:** drugs grouped as class → subclass → name (alphabetical), with counts, search, and collapse / expand all.
+- **One source of truth:** edit `drugs.json`, reload the page, done. No build step, no dependencies, no backend.
+- **Sidebar navigation:** drugs grouped in three tiers (family → class → subclass → name, alphabetical), with counts, search, and collapse / expand all.
 - **Search:** matches drug name, brand name, class, subclass and indications.
 - **Mechanism flow:** Target → Mechanism → Response shown as three connected boxes.
 - **Adverse effects in three tiers:** common (plain), severe (dashed orange), lethal (filled dark). Shape and fill carry the meaning, not just colour.
@@ -43,7 +44,7 @@ The page is designed to be read quickly: colour-blind-friendly colours, shape an
 - **Study mode:** blurs indications, mechanism, adverse effects, interactions, kinetics and regimen values until you click them. "Reveal all" is available.
 - **Verified tracking:** each drug can carry a "last verified" date, shown on the page and in the sidebar.
 - **Light and dark mode** follow the system setting.
-- **Accessible by design:** colours from the Okabe-Ito colour-blind-safe palette (because I'm red-green colour blind); warning states differ by label, icon, border style and fill.
+- **Accessible by design:** colours from the Okabe-Ito colour-blind-safe palette; warning states differ by label, icon, border style and fill.
 
 ---
 
@@ -67,7 +68,7 @@ The page is designed to be read quickly: colour-blind-friendly colours, shape an
 
    Then open <http://localhost:8000>.
 
-   Other options: **VS Code "Live Server" (I personally use this option)**, `npx serve`, or any static host (see [Hosting](#hosting)).
+   Other options: VS Code "Live Server", `npx serve`, or any static host (see [Hosting](#hosting)).
 
 3. **No server?** Double-click `index.html`. The page will show a **Choose drugs.json** button. Pick your file and it loads. The page remembers the last file you chose (in the browser's local storage), so you only need to do this again when the file changes.
 
@@ -81,6 +82,7 @@ The page is designed to be read quickly: colour-blind-friendly colours, shape an
 | `style.css` | All styling, driven by CSS variables (colours, light / dark mode). |
 | `app.js` | Loads the JSON, builds the sidebar, renders each drug, handles search, collapse, study mode. |
 | `drugs.json` | **The database.** An array of drug objects. |
+| `validate.py` | Thorough data checker (structure, consistency, style). Run it before sharing changes. |
 | `README.md` | This file. |
 
 ---
@@ -89,36 +91,36 @@ The page is designed to be read quickly: colour-blind-friendly colours, shape an
 
 1. `app.js` fetches `drugs.json` (`cache: "no-store"` so edits show immediately).
 2. If the fetch fails (for example when opened from `file://`), it falls back to the last copy saved in local storage, and otherwise shows the file picker.
-3. Drugs are sorted by `cls` (class), then `sub` (subclass), then `name` (non-commercial drug name), and grouped into the sidebar.
-4. Selecting a drug sets the URL hash (`#drug-id`) and renders the page for that drug. Because the hash is the drug's `id` (ID), you can bookmark or share a link to a single drug.
-5. All text goes through an escaping function before it is inserted into the page. Only `↑` (blue) and `↓` (orange) are converted to badges.
+3. Drugs are sorted by `family`, then `cls`, then `sub`, then `name`, and grouped into a three-level sidebar. A drug with an empty `sub` sits directly under its class.
+4. Selecting a drug sets the URL hash (`#drug-id`) and renders the page for that drug. Because the hash is the drug's `id`, you can bookmark or share a link to a single drug.
+5. All text goes through an escaping function before it is inserted into the page. Only `↑` and `↓` are converted to badges.
 
-Everything is plain HTML, CSS and JavaScript. Any modern browser should work (the CSS uses `color-mix()`, so use a reasonably recent version).
+Everything is plain HTML, CSS and JavaScript. Any modern browser works (the CSS uses `color-mix()`, so use a reasonably recent version).
 
 ---
 
 ## Data format
 
-`drugs.json` is an array. Each element is one drug. The template for an element is as follows:
+`drugs.json` is an array. Each element is one drug:
 
 ```json
 {
   "id": "example-drug",
   "name": "Example drug",
   "brand": "Brandname; Othername",
-  "cls": "Example class (e.g., Cardiovascular)",
-  "sub": "Example subclass (e.g., Class Ia antiarrhythmics)",
-  "ind": ["Indication one", "Indication two", etc.],
+  "family": "Cardiovascular",
+  "cls": "Lipid-lowering agents",
+  "sub": "Statins",
+  "ind": ["Indication one", "Indication two"],
   "target": "Receptor or process the drug acts on",
   "moa": "Mechanism of action, written as one sentence",
   "resp": "Physiological response / net effect",
-  "contra": ["Contraindication one", etc.],
-  "common": ["Common adverse effect", etc.],
-  "severe": ["Severe adverse effect", etc.],
-  "lethal": ["Potentially fatal adverse effect", etc.],
+  "contra": ["Contraindication one"],
+  "common": ["Common adverse effect"],
+  "severe": ["Severe adverse effect"],
+  "lethal": ["Potentially fatal adverse effect"],
   "ddi": [
-    { "drug": "Interacting drug(s)", "mech": "Mechanism, e.g. CYP3A4 inhibition ↑ levels" },
-    etc.
+    { "drug": "Interacting drug(s)", "mech": "Mechanism, e.g. CYP3A4 inhibition ↑ levels" }
   ],
   "sus": {
     "allergy": "—",
@@ -156,8 +158,9 @@ Everything is plain HTML, CSS and JavaScript. Any modern browser should work (th
 | `id` | string | URL hash and internal key. **Must be unique**, lowercase, hyphenated, no spaces. |
 | `name` | string | Page title. |
 | `brand` | string | Subtitle. Separate brands with `;`. |
-| `cls` | string | Top-level group in the sidebar. |
-| `sub` | string | Second-level group in the sidebar. |
+| `family` | string | Top tier in the sidebar: a broad therapeutic area (for example `Cardiovascular`). |
+| `cls` | string | Middle tier: a therapeutic or pharmacological class (for example `Lipid-lowering agents`). |
+| `sub` | string | Bottom tier: the specific drug subclass (for example `Statins`). May be `""` when a class has no meaningful subdivision. |
 | `ind` | string[] | Indication chips. |
 | `target`, `moa`, `resp` | string | The three-box mechanism flow. |
 | `contra` | string[] | Contraindications box. |
@@ -189,16 +192,16 @@ Consistent wording is what makes revision fast, because identical text signals "
 
 ## Tutorial: add your first drug
 
-**Goal:** add a drug called "Examplestatin" to the existing Statins subclass.
+**Goal:** add a drug called "Examplestatin" to the existing Cardiovascular › Lipid-lowering agents › Statins group.
 
 1. Open `drugs.json`.
-2. Find a drug in the same subclass (for example `atorvastatin`) and copy its whole object.
+2. Find a drug with a similar mechanism (for example `atorvastatin`) and copy its whole object.
 3. Paste it at the end of the array (before the final `]`), and add a comma after the previous object.
 4. Change the drug-specific fields:
    - `id` → `"examplestatin"` (unique)
    - `name`, `brand`
    - `ind`, `ddi`, `sus`, `pk`, `reg`
-5. **Leave `cls`, `sub`, `target`, `moa`, `resp`, `contra`, `common`, `severe` and `lethal` untouched** if they are the same for this drug. Reusing identical text is the point.
+5. **Leave `family`, `cls`, `sub`, `target`, `moa`, `resp`, `contra`, `common`, `severe` and `lethal` untouched** if they are the same for this drug. Reusing identical text is the point.
 6. Set `"verified": ""` until you have checked it against a source.
 7. Save and reload the page. The drug appears in the sidebar under its class and subclass, in alphabetical order.
 
@@ -214,8 +217,9 @@ import json
 D = json.load(open("drugs.json"))
 
 SHARED = dict(
-    cls="Cardiovascular",
-    sub="Statins (HMG-CoA reductase inhibitors)",
+    family="Cardiovascular",
+    cls="Lipid-lowering agents",
+    sub="Statins",
     target="HMG-CoA reductase (hepatic)",
     moa="Competitively inhibits HMG-CoA reductase, ↓ hepatic cholesterol synthesis and ↑ LDL receptor expression, ↑ LDL clearance from plasma",
     resp="↓ LDL-C (and triglycerides); ↓ CV events",
@@ -242,22 +246,29 @@ D.append(dict(
 json.dump(D, open("drugs.json", "w"), ensure_ascii=False, indent=1)
 ```
 
-Note: do not pass the same key twice (once inside `**SHARED` and once explicitly) or Python raises "multiple values for keyword argument", and always back up `drugs.json` first.
+Two Python gotchas: do not pass the same key twice (once inside `**SHARED` and once explicitly) or Python raises "multiple values for keyword argument", and always back up `drugs.json` first.
 
 ---
 
-## Tutorial: add a new class
+## Tutorial: add a new family, class or subclass
 
-Classes are not defined anywhere. They appear automatically from the `cls` and `sub` values.
+The three tiers are not defined anywhere. They appear automatically from the `family`, `cls` and `sub` values.
 
-1. Choose a name for the class and subclass, for example `"cls": "Endocrine"`, `"sub": "Biguanides"`.
-2. Add a drug that uses those values.
-3. Reload. A new group appears in the sidebar, sorted alphabetically.
+| Tier | Meaning | Example |
+| --- | --- | --- |
+| `family` | Broad therapeutic area | `Cardiovascular` |
+| `cls` | Class of drugs used for a purpose or acting in a related way | `β-blockers` |
+| `sub` | The specific pharmacological subclass | `β1-selective` |
 
-Keep spellings identical across drugs. "Antibacterial" and "Antibacterials" would create two separate groups.
+1. Pick values for all three tiers, for example `"family": "Endocrine"`, `"cls": "Antidiabetic agents"`, `"sub": "Biguanides"`.
+2. Add a drug that uses them. Reload. The new groups appear in the sidebar, sorted alphabetically.
+3. If a class has no meaningful subdivision (for example `Corticosteroids`), set `"sub": ""` and the drugs sit directly under the class.
 
-- The naming convention for classes is usually singular (e.g., Antibacterial).
-- The naming convention for subclasses is usually plural (e.g., Antimycobacterial agents).
+Rules of thumb:
+
+- A subclass name must be **true for every drug in it**. If a drug does not fit, create a new subclass or a new class rather than stretching an existing label.
+- Keep spellings identical across drugs. "Antibacterials" and "Antibacterial" would create two separate groups.
+- Do not repeat the same name at two tiers (a subclass called the same as its class adds nothing). `validate.py` points these out.
 
 ---
 
@@ -358,41 +369,22 @@ Valid override values: `avoid`, `caution`, `ok`, `note`, `none`.
 
 ## Validating your data
 
-A quick check that catches the common mistakes (missing keys, duplicate ids, empty lists). Save as `validate.py` next to `drugs.json`:
+`validate.py` checks `drugs.json` for structural errors, style problems and inconsistencies. Put it next to `drugs.json` and run:
 
-```python
-import json, sys
-
-REQUIRED = "id name brand cls sub ind target moa resp contra common severe lethal ddi sus pk reg verified".split()
-SUS = "allergy sex age genetic liver kidney pregnancy breastfeeding".split()
-PK = "bio dist met t12 exc".split()
-REG = "dose route form freq timing stop".split()
-
-data = json.load(open("drugs.json", encoding="utf-8"))
-ids, problems = set(), []
-
-for d in data:
-    name = d.get("id", "<no id>")
-    for k in REQUIRED:
-        if k not in d: problems.append(f"{name}: missing '{k}'")
-    if name in ids: problems.append(f"{name}: duplicate id")
-    ids.add(name)
-    for k in SUS:
-        if k not in d.get("sus", {}): problems.append(f"{name}: sus.{k} missing")
-    for k in PK:
-        if k not in d.get("pk", {}): problems.append(f"{name}: pk.{k} missing")
-    for k in REG:
-        if k not in d.get("reg", {}): problems.append(f"{name}: reg.{k} missing")
-    for k in ("ind", "contra", "common", "severe", "lethal"):
-        if not d.get(k): problems.append(f"{name}: '{k}' is empty")
-    if " " in name or name != name.lower(): problems.append(f"{name}: id should be lowercase-hyphenated")
-
-print(f"{len(data)} drugs checked")
-print("\n".join(problems) if problems else "No problems found")
-sys.exit(1 if problems else 0)
+```bash
+python3 validate.py            # errors and warnings
+python3 validate.py --info     # also show review notes and a summary
+python3 validate.py --strict   # warnings fail the run (useful before committing)
+python3 validate.py --max 50   # show more lines per check
 ```
 
-Run it with `python3 validate.py` before you commit or share changes.
+What it looks for:
+
+- **Errors:** missing keys, wrong types, empty values, bad or duplicate ids, malformed interaction rows, invalid or future `verified` dates.
+- **Warnings:** unknown keys (typos), duplicate list items, the same adverse effect in two tiers, US spellings, hyphens used for numeric ranges, near-identical family / class / subclass names, nearly-identical wording inside one group, and contraindications that disagree with the susceptibility warning level.
+- **Notes:** words that could be arrows, which susceptibility cells will display as caution, and counts of drugs, families, classes, subclasses and verified entries.
+
+Warnings are prompts to review, not necessarily mistakes. For example, two drugs in one subclass may legitimately have slightly different mechanisms.
 
 ---
 
@@ -438,11 +430,24 @@ Good first contributions: verifying an existing drug, fixing a typo, filling a v
 
 ---
 
+## Ideas for extension
+
+- **Filter by verified status** (show only unverified drugs to work through them).
+- **Compare two drugs** side by side (same class, differing fields highlighted).
+- **Quiz mode:** generate flashcards from `moa`, `target` and `common` / `severe`.
+- **Print view:** a one-page-per-drug stylesheet using `@media print`.
+- **Bookmarks or notes** saved to local storage.
+- **Interaction checker:** a field for each drug's metabolism pathway, so the page can flag shared CYP interactions.
+- **Multiple data files** per class, merged at load time.
+- **A form-based editor** that exports valid JSON, for people who do not want to edit it by hand.
+
+---
+
 ## Disclaimer
 
 This project is for **education and revision only**. It is not a substitute for professional judgement, local guidelines or an authoritative drug reference, and it must not be used to make prescribing, dosing or treatment decisions.
 
-Much of the content was drafted with AI assistance (Claude) from general pharmacology knowledge, not copied from a primary source. It may contain errors, outdated information or details that differ in your jurisdiction (availability, brands, doses, schedules and guidance change). Always check the current product information and your local guidelines. Treat any entry whose `verified` field is empty as unchecked.
+Much of the content was drafted with AI assistance from general pharmacology knowledge, not copied from a primary source. It may contain errors, outdated information or details that differ in your jurisdiction (availability, brands, doses, schedules and guidance change). Always check the current product information and your local guidelines. Treat any entry whose `verified` field is empty as unchecked.
 
 ---
 

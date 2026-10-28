@@ -19,7 +19,7 @@ from collections import Counter, defaultdict
 from datetime import date, datetime
 
 # ---------------------------------------------------------------- schema ---
-STR_FIELDS = ["id", "name", "brand", "cls", "sub", "target", "moa", "resp", "verified"]
+STR_FIELDS = ["id", "name", "brand", "family", "cls", "sub", "target", "moa", "resp", "verified"]
 LIST_FIELDS = ["ind", "contra", "common", "severe", "lethal"]
 SUS = ["allergy", "sex", "age", "genetic", "liver", "kidney", "pregnancy", "breastfeeding"]
 PK = ["bio", "dist", "met", "t12", "exc"]
@@ -27,7 +27,7 @@ REG = ["dose", "route", "form", "freq", "timing", "stop"]
 OBJ_FIELDS = {"sus": SUS, "pk": PK, "reg": REG}
 ALLOWED_TOP = set(STR_FIELDS + LIST_FIELDS + ["ddi", "sus", "pk", "reg"])
 RISK_VALUES = {"avoid", "caution", "ok", "note", "none"}
-MAY_BE_EMPTY = {"verified"}                   # "" means "not yet verified"
+MAY_BE_EMPTY = {"verified", "sub"}            # verified "" = not yet verified; sub "" = no subclass
 
 # ------------------------------------------------------- style conventions ---
 ROUTES = {"PO", "IV", "IM", "SC", "SL", "PR", "PV", "ID", "IT", "MDI", "DPI"}
@@ -289,8 +289,8 @@ def validate(path, cap, today):
                 except ValueError:
                     rep.add("ERROR", "verified is not a real date", f"{who}: {v!r}")
 
-        if isinstance(d.get("sub"), str) and isinstance(d.get("cls"), str):
-            by_sub[(d["cls"], d["sub"])].append(d)
+        if all(isinstance(d.get(k), str) for k in ("family", "cls", "sub")):
+            by_sub[(d["family"], d["cls"], d["sub"])].append(d)
 
     # ---- global checks ---------------------------------------------------
     for k, n in ids.items():
@@ -300,27 +300,40 @@ def validate(path, cap, today):
         if n > 1:
             rep.add("WARNING", "Duplicate drug name", f"{k!r} appears {n} times")
 
-    # near-identical class / subclass names
-    classes = sorted({c for c, _ in by_sub})
-    subs = sorted({s for _, s in by_sub})
-    for pool, label in ((classes, "class"), (subs, "subclass")):
-        for a in pool:
-            for b in pool:
-                norm = lambda x: re.sub(r"[^a-z0-9]", "", x.lower()).rstrip("s")
-                if a < b and (norm(a) == norm(b) or difflib.SequenceMatcher(None, a.lower(), b.lower()).ratio() > 0.97):
-                    rep.add("WARNING", f"Near-identical {label} names (typo?)", f"{a!r} vs {b!r}")
+    # three-tier hierarchy checks: family > class > subclass
+    norm = lambda x: re.sub(r"[^a-z0-9]", "", x.lower()).rstrip("s")
+    families = sorted({k[0] for k in by_sub})
+    classes = sorted({(k[0], k[1]) for k in by_sub})
+    subs = sorted({k for k in by_sub if k[2]})
+    for pool, label in (({k[0] for k in by_sub}, "family"), ({k[1] for k in by_sub}, "class"),
+                        ({k[2] for k in by_sub if k[2]}, "subclass")):
+        pool = sorted(pool)
+        for x in pool:
+            for y in pool:
+                if x < y and (norm(x) == norm(y) or difflib.SequenceMatcher(None, x.lower(), y.lower()).ratio() > 0.97):
+                    rep.add("WARNING", f"Near-identical {label} names (typo?)", f"{x!r} vs {y!r}")
+    cls_to_fam = defaultdict(set)
+    for f, c, _ in by_sub:
+        cls_to_fam[c].add(f)
+    for c, fs in cls_to_fam.items():
+        if len(fs) > 1:
+            rep.add("WARNING", "Same class name under different families", f"{c!r}: {sorted(fs)}")
     sub_to_cls = defaultdict(set)
-    for c, s in by_sub:
-        sub_to_cls[s].add(c)
-    for s, cs in sub_to_cls.items():
+    for f, c, s_ in by_sub:
+        if s_:
+            sub_to_cls[s_].add((f, c))
+    for s_, cs in sub_to_cls.items():
         if len(cs) > 1:
-            rep.add("WARNING", "Same subclass name under different classes", f"{s!r}: {sorted(cs)}")
-    for (c, s), ds in by_sub.items():
-        if len(ds) == 1:
-            rep.add("INFO", "Subclass contains a single drug", f"{c} > {s}: {ds[0]['id']}")
+            rep.add("WARNING", "Same subclass name under different classes", f"{s_!r}: {sorted(cs)}")
+    for f, c, s_ in by_sub:
+        if s_ and norm(s_) == norm(c):
+            rep.add("INFO", "Subclass repeats the class name (leave sub empty instead)", f"{f} > {c}")
+        if norm(c) == norm(f):
+            rep.add("INFO", "Class repeats the family name", f"{f} > {c}")
 
-    # wording consistency inside a subclass (nearly-identical but not identical)
-    for (c, s), ds in by_sub.items():
+    # wording consistency inside the same family > class > subclass
+    for (f, c, s_), ds in by_sub.items():
+        label = " > ".join(x for x in (f, c, s_) if x)
         for field in ("target", "moa", "resp"):
             for a_i in range(len(ds)):
                 for b_i in range(a_i + 1, len(ds)):
@@ -328,8 +341,8 @@ def validate(path, cap, today):
                     if isinstance(a, str) and isinstance(b, str) and a != b and len(a) > 25:
                         r = difflib.SequenceMatcher(None, a, b).ratio()
                         if r >= 0.88:
-                            rep.add("WARNING", "Near-identical wording in the same subclass (make identical or genuinely different)",
-                                    f"{c} > {s}: {ds[a_i]['id']} vs {ds[b_i]['id']} [{field}] similarity {r:.2f}")
+                            rep.add("WARNING", "Near-identical wording in the same group (make identical or genuinely different)",
+                                    f"{label}: {ds[a_i]['id']} vs {ds[b_i]['id']} [{field}] similarity {r:.2f}")
 
     # ---- summary ---------------------------------------------------------
     total = len(data)
@@ -339,7 +352,7 @@ def validate(path, cap, today):
         if isinstance(d, dict) and isinstance(d.get("sus"), dict):
             for k in ("liver", "kidney", "pregnancy", "breastfeeding"):
                 rl[risk(d["sus"], k)] += 1
-    rep.add("INFO", "Summary", f"{total} drugs, {len(classes)} classes, {len(subs)} subclasses, {vcount} verified")
+    rep.add("INFO", "Summary", f"{total} drugs, {len(families)} families, {len(classes)} classes, {len(subs)} subclasses, {vcount} verified")
     rep.add("INFO", "Page warning levels (liver / kidney / pregnancy / breastfeeding)",
             ", ".join(f"{k}: {v}" for k, v in sorted(rl.items())))
     return rep

@@ -260,3 +260,8 @@ h2{border-left-color:var(--b)}
 .l .ar.dn{color:var(--ks);border-color:var(--ks)}
 .ar.up{background:#E69F00;color:#1b2430}
 .ar.dn{background:#CC79A7;color:#1b2430}
+
+/* three-tier sidebar */
+#list details.L2>summary{padding:5px 8px;font-size:14px;font-weight:700}
+#list details.L3{margin-left:10px}
+#list details.L3>summary{padding:3px 8px;font-size:13px;font-weight:600;color:var(--mu)}

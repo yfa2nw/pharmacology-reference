@@ -1,6 +1,10 @@
 [
  {
-  "cls": "Antibacterial",
+  "id": "azithromycin",
+  "name": "Azithromycin",
+  "brand": "Zithromax",
+  "family": "Anti-infective",
+  "cls": "Antibacterials",
   "sub": "Macrolides",
   "ind": [
    "CAP",
@@ -29,9 +33,6 @@
    "Torsades de pointes",
    "Anaphylaxis"
   ],
-  "id": "azithromycin",
-  "name": "Azithromycin",
-  "brand": "Zithromax",
   "ddi": [
    {
     "drug": "QT-prolonging drugs (e.g. amiodarone, antipsychotics)",
@@ -70,7 +71,11 @@
   "verified": ""
  },
  {
-  "cls": "Antibacterial",
+  "id": "clarithromycin",
+  "name": "Clarithromycin",
+  "brand": "Klacid",
+  "family": "Anti-infective",
+  "cls": "Antibacterials",
   "sub": "Macrolides",
   "ind": [
    "CAP",
@@ -99,9 +104,6 @@
    "Torsades de pointes",
    "Anaphylaxis"
   ],
-  "id": "clarithromycin",
-  "name": "Clarithromycin",
-  "brand": "Klacid",
   "ddi": [
    {
     "drug": "QT-prolonging drugs (e.g. amiodarone, antipsychotics)",
@@ -148,7 +150,11 @@
   "verified": ""
  },
  {
-  "cls": "Antibacterial",
+  "id": "erythromycin",
+  "name": "Erythromycin",
+  "brand": "E-Mycin; Erythrocin",
+  "family": "Anti-infective",
+  "cls": "Antibacterials",
   "sub": "Macrolides",
   "ind": [
    "CAP (atypical)",
@@ -177,9 +183,6 @@
    "Torsades de pointes",
    "Anaphylaxis"
   ],
-  "id": "erythromycin",
-  "name": "Erythromycin",
-  "brand": "E-Mycin; Erythrocin",
   "ddi": [
    {
     "drug": "QT-prolonging drugs (e.g. amiodarone, antipsychotics)",
@@ -229,7 +232,8 @@
   "id": "ciprofloxacin",
   "name": "Ciprofloxacin",
   "brand": "Ciproxin",
-  "cls": "Antibacterial",
+  "family": "Anti-infective",
+  "cls": "Antibacterials",
   "sub": "Fluoroquinolones",
   "ind": [
    "Complicated UTI / pyelonephritis",
@@ -318,7 +322,8 @@
   "id": "vancomycin",
   "name": "Vancomycin",
   "brand": "Vancocin",
-  "cls": "Antibacterial",
+  "family": "Anti-infective",
+  "cls": "Antibacterials",
   "sub": "Glycopeptides",
   "ind": [
    "MRSA infection (bacteraemia, endocarditis)",
@@ -386,7 +391,8 @@
   "id": "metronidazole",
   "name": "Metronidazole",
   "brand": "Flagyl",
-  "cls": "Antibacterial",
+  "family": "Anti-infective",
+  "cls": "Antibacterials",
   "sub": "Nitroimidazoles",
   "ind": [
    "Anaerobic infection",
@@ -464,7 +470,8 @@
   "id": "doxycycline",
   "name": "Doxycycline",
   "brand": "Vibramycin; Doryx",
-  "cls": "Antibacterial",
+  "family": "Anti-infective",
+  "cls": "Antibacterials",
   "sub": "Tetracyclines",
   "ind": [
    "Atypical CAP",
@@ -546,7 +553,8 @@
   "id": "albendazole",
   "name": "Albendazole",
   "brand": "Zentel; Eskazole",
-  "cls": "Antiparasitic",
+  "family": "Anti-infective",
+  "cls": "Antiparasitics",
   "sub": "Benzimidazoles",
   "target": "Helminth β-tubulin",
   "moa": "Binds helminth β-tubulin, inhibiting microtubule polymerisation, impairing glucose uptake and depleting glycogen, leading to energy depletion and death",
@@ -613,7 +621,8 @@
   "id": "mebendazole",
   "name": "Mebendazole",
   "brand": "Vermox",
-  "cls": "Antiparasitic",
+  "family": "Anti-infective",
+  "cls": "Antiparasitics",
   "sub": "Benzimidazoles",
   "target": "Helminth β-tubulin",
   "moa": "Binds helminth β-tubulin, inhibiting microtubule polymerisation, impairing glucose uptake and depleting glycogen, leading to energy depletion and death",
@@ -680,7 +689,8 @@
   "id": "ivermectin",
   "name": "Ivermectin",
   "brand": "Stromectol",
-  "cls": "Antiparasitic",
+  "family": "Anti-infective",
+  "cls": "Antiparasitics",
   "sub": "Macrocyclic lactones",
   "ind": [
    "Strongyloidiasis",
@@ -749,7 +759,8 @@
   "id": "amphotericin-b",
   "name": "Amphotericin B",
   "brand": "Fungizone; AmBisome; Abelcet",
-  "cls": "Antifungal",
+  "family": "Anti-infective",
+  "cls": "Antifungals",
   "sub": "Polyenes",
   "ind": [
    "Cryptococcal meningitis (with flucytosine)",
@@ -823,7 +834,8 @@
   "id": "fluconazole",
   "name": "Fluconazole",
   "brand": "Diflucan",
-  "cls": "Antifungal",
+  "family": "Anti-infective",
+  "cls": "Antifungals",
   "sub": "Azoles",
   "target": "Fungal lanosterol 14-α-demethylase (CYP51)",
   "moa": "Inhibits lanosterol 14-α-demethylase, blocking conversion of lanosterol to ergosterol, depleting membrane ergosterol and accumulating toxic sterols",
@@ -901,7 +913,8 @@
   "id": "voriconazole",
   "name": "Voriconazole",
   "brand": "Vfend",
-  "cls": "Antifungal",
+  "family": "Anti-infective",
+  "cls": "Antifungals",
   "sub": "Azoles",
   "target": "Fungal lanosterol 14-α-demethylase (CYP51)",
   "moa": "Inhibits lanosterol 14-α-demethylase, blocking conversion of lanosterol to ergosterol, depleting membrane ergosterol and accumulating toxic sterols",
@@ -983,7 +996,8 @@
   "id": "anidulafungin",
   "name": "Anidulafungin",
   "brand": "Eraxis",
-  "cls": "Antifungal",
+  "family": "Anti-infective",
+  "cls": "Antifungals",
   "sub": "Echinocandins",
   "target": "Fungal β-(1,3)-D-glucan synthase",
   "moa": "Inhibits β-(1,3)-D-glucan synthase, blocking synthesis of β-(1,3)-D-glucan, weakening the fungal cell wall and causing osmotic lysis",
@@ -1044,7 +1058,8 @@
   "id": "caspofungin",
   "name": "Caspofungin",
   "brand": "Cancidas",
-  "cls": "Antifungal",
+  "family": "Anti-infective",
+  "cls": "Antifungals",
   "sub": "Echinocandins",
   "target": "Fungal β-(1,3)-D-glucan synthase",
   "moa": "Inhibits β-(1,3)-D-glucan synthase, blocking synthesis of β-(1,3)-D-glucan, weakening the fungal cell wall and causing osmotic lysis",
@@ -1114,7 +1129,8 @@
   "id": "metoclopramide",
   "name": "Metoclopramide",
   "brand": "Maxolon",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Antiemetics & prokinetics",
   "sub": "Dopamine D2 antagonists",
   "ind": [
    "Nausea / vomiting",
@@ -1192,7 +1208,8 @@
   "id": "ondansetron",
   "name": "Ondansetron",
   "brand": "Zofran",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Antiemetics & prokinetics",
   "sub": "5-HT3 antagonists",
   "ind": [
    "Chemotherapy-induced N/V",
@@ -1269,7 +1286,8 @@
   "id": "promethazine",
   "name": "Promethazine",
   "brand": "Phenergan",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Antiemetics & prokinetics",
   "sub": "H1 antagonists (phenothiazines)",
   "ind": [
    "Allergic conditions",
@@ -1351,7 +1369,8 @@
   "id": "hyoscine-butylbromide",
   "name": "Hyoscine butylbromide",
   "brand": "Buscopan",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Antidiarrhoeals & antispasmodics",
   "sub": "Antimuscarinics",
   "ind": [
    "GI / biliary / renal colic",
@@ -1423,7 +1442,8 @@
   "id": "netupitant",
   "name": "Netupitant",
   "brand": "Akynzeo (with palonosetron)",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Antiemetics & prokinetics",
   "sub": "NK1 antagonists",
   "ind": [
    "Prevention of chemotherapy-induced N/V (highly / moderately emetogenic)"
@@ -1491,7 +1511,8 @@
   "id": "prucalopride",
   "name": "Prucalopride",
   "brand": "Resolor",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Antiemetics & prokinetics",
   "sub": "5-HT4 agonists",
   "ind": [
    "Chronic constipation (laxative-refractory)"
@@ -1564,8 +1585,9 @@
   "id": "5-asa",
   "name": "5-ASA (mesalazine)",
   "brand": "Pentasa; Asacol; Salofalk",
-  "cls": "Immunomodulator",
-  "sub": "Aminosalicylates",
+  "family": "Immunology & rheumatology",
+  "cls": "Aminosalicylates",
+  "sub": "",
   "target": "Colonic mucosal inflammatory pathways (COX, lipoxygenase, NF-κB)",
   "resp": "Local anti-inflammatory; induces and maintains remission",
   "ind": [
@@ -1639,8 +1661,9 @@
   "id": "sulfasalazine",
   "name": "Sulfasalazine",
   "brand": "Salazopyrin",
-  "cls": "Immunomodulator",
-  "sub": "Aminosalicylates",
+  "family": "Immunology & rheumatology",
+  "cls": "Aminosalicylates",
+  "sub": "",
   "target": "Colonic mucosal inflammatory pathways (COX, lipoxygenase, NF-κB)",
   "resp": "Local anti-inflammatory; induces and maintains remission",
   "ind": [
@@ -1717,7 +1740,8 @@
   "id": "azathioprine",
   "name": "Azathioprine",
   "brand": "Imuran",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Conventional DMARDs & immunosuppressants",
   "sub": "Thiopurines",
   "target": "Purine synthesis in proliferating lymphocytes",
   "resp": "Immunosuppressive; ↓ lymphocyte proliferation",
@@ -1797,7 +1821,8 @@
   "id": "6-mercaptopurine",
   "name": "6-Mercaptopurine",
   "brand": "Puri-Nethol",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Conventional DMARDs & immunosuppressants",
   "sub": "Thiopurines",
   "target": "Purine synthesis in proliferating lymphocytes",
   "resp": "Immunosuppressive; ↓ lymphocyte proliferation",
@@ -1876,7 +1901,8 @@
   "id": "methotrexate",
   "name": "Methotrexate",
   "brand": "Methoblastin",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Conventional DMARDs & immunosuppressants",
   "sub": "Antimetabolites (antifolates)",
   "ind": [
    "Rheumatoid arthritis",
@@ -1961,8 +1987,9 @@
   "id": "prednisone",
   "name": "Prednisone",
   "brand": "Panafcort; Predsone",
-  "cls": "Immunomodulator",
-  "sub": "Corticosteroids",
+  "family": "Immunology & rheumatology",
+  "cls": "Corticosteroids",
+  "sub": "",
   "target": "Cytoplasmic glucocorticoid receptor",
   "moa": "Binds the cytoplasmic glucocorticoid receptor; the complex moves to the nucleus to ↑ anti-inflammatory gene transcription and ↓ pro-inflammatory (NF-κB, AP-1) gene transcription, reducing cytokine production and lymphocyte activity",
   "resp": "Anti-inflammatory and immunosuppressive",
@@ -2052,8 +2079,9 @@
   "id": "budesonide",
   "name": "Budesonide",
   "brand": "Entocort; Cortiment; Pulmicort",
-  "cls": "Immunomodulator",
-  "sub": "Corticosteroids",
+  "family": "Immunology & rheumatology",
+  "cls": "Corticosteroids",
+  "sub": "",
   "target": "Cytoplasmic glucocorticoid receptor",
   "moa": "Binds the cytoplasmic glucocorticoid receptor; the complex moves to the nucleus to ↑ anti-inflammatory gene transcription and ↓ pro-inflammatory (NF-κB, AP-1) gene transcription, reducing cytokine production and lymphocyte activity",
   "resp": "Anti-inflammatory and immunosuppressive; high first-pass ↓ systemic effects",
@@ -2127,8 +2155,9 @@
   "id": "methylprednisolone",
   "name": "Methylprednisolone",
   "brand": "Solu-Medrol; Medrol",
-  "cls": "Immunomodulator",
-  "sub": "Corticosteroids",
+  "family": "Immunology & rheumatology",
+  "cls": "Corticosteroids",
+  "sub": "",
   "target": "Cytoplasmic glucocorticoid receptor",
   "moa": "Binds the cytoplasmic glucocorticoid receptor; the complex moves to the nucleus to ↑ anti-inflammatory gene transcription and ↓ pro-inflammatory (NF-κB, AP-1) gene transcription, reducing cytokine production and lymphocyte activity",
   "resp": "Anti-inflammatory and immunosuppressive",
@@ -2218,8 +2247,9 @@
   "id": "hydrocortisone",
   "name": "Hydrocortisone",
   "brand": "Solu-Cortef; Cortef",
-  "cls": "Immunomodulator",
-  "sub": "Corticosteroids",
+  "family": "Immunology & rheumatology",
+  "cls": "Corticosteroids",
+  "sub": "",
   "target": "Cytoplasmic glucocorticoid receptor",
   "moa": "Binds the cytoplasmic glucocorticoid receptor; the complex moves to the nucleus to ↑ anti-inflammatory gene transcription and ↓ pro-inflammatory (NF-κB, AP-1) gene transcription, reducing cytokine production and lymphocyte activity",
   "resp": "Anti-inflammatory and immunosuppressive; mineralocorticoid activity (fluid retention, hypokalaemia)",
@@ -2310,7 +2340,8 @@
   "id": "etanercept",
   "name": "Etanercept",
   "brand": "Enbrel",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Biologics",
   "sub": "TNF-α inhibitors",
   "target": "Soluble and transmembrane TNF-α",
   "resp": "Anti-inflammatory and immunosuppressive; ↓ TNF-mediated inflammation",
@@ -2388,7 +2419,8 @@
   "id": "infliximab",
   "name": "Infliximab",
   "brand": "Remicade; Inflectra",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Biologics",
   "sub": "TNF-α inhibitors",
   "target": "Soluble and transmembrane TNF-α",
   "resp": "Anti-inflammatory and immunosuppressive; ↓ TNF-mediated inflammation",
@@ -2471,7 +2503,8 @@
   "id": "adalimumab",
   "name": "Adalimumab",
   "brand": "Humira; Amgevita",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Biologics",
   "sub": "TNF-α inhibitors",
   "target": "Soluble and transmembrane TNF-α",
   "resp": "Anti-inflammatory and immunosuppressive; ↓ TNF-mediated inflammation",
@@ -2554,7 +2587,8 @@
   "id": "certolizumab",
   "name": "Certolizumab pegol",
   "brand": "Cimzia",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Biologics",
   "sub": "TNF-α inhibitors",
   "target": "Soluble and transmembrane TNF-α",
   "resp": "Anti-inflammatory and immunosuppressive; ↓ TNF-mediated inflammation",
@@ -2636,7 +2670,8 @@
   "id": "golimumab",
   "name": "Golimumab",
   "brand": "Simponi",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Biologics",
   "sub": "TNF-α inhibitors",
   "target": "Soluble and transmembrane TNF-α",
   "resp": "Anti-inflammatory and immunosuppressive; ↓ TNF-mediated inflammation",
@@ -2718,7 +2753,8 @@
   "id": "ustekinumab",
   "name": "Ustekinumab",
   "brand": "Stelara",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Biologics",
   "sub": "IL-12/23 inhibitors",
   "ind": [
    "Crohn's disease",
@@ -2790,7 +2826,8 @@
   "id": "vedolizumab",
   "name": "Vedolizumab",
   "brand": "Entyvio",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Biologics",
   "sub": "Integrin inhibitors",
   "ind": [
    "Ulcerative colitis",
@@ -2863,7 +2900,8 @@
   "id": "calcium-carbonate",
   "name": "Calcium carbonate",
   "brand": "Tums; Quick-Eze",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "Antacids",
   "target": "Gastric hydrochloric acid (luminal H⁺)",
   "moa": "Neutralises gastric hydrochloric acid in the stomach lumen, ↑ gastric pH and ↓ pepsin activity",
@@ -2938,7 +2976,8 @@
   "id": "sodium-bicarbonate",
   "name": "Sodium bicarbonate",
   "brand": "Bicarb soda",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "Antacids",
   "target": "Gastric hydrochloric acid (luminal H⁺)",
   "moa": "Neutralises gastric hydrochloric acid in the stomach lumen, ↑ gastric pH and ↓ pepsin activity",
@@ -3019,7 +3058,8 @@
   "id": "magnesium-carbonate",
   "name": "Magnesium carbonate",
   "brand": "Gaviscon (combination)",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "Antacids",
   "target": "Gastric hydrochloric acid (luminal H⁺)",
   "moa": "Neutralises gastric hydrochloric acid in the stomach lumen, ↑ gastric pH and ↓ pepsin activity",
@@ -3092,7 +3132,8 @@
   "id": "aluminium-hydroxide",
   "name": "Aluminium hydroxide",
   "brand": "Mylanta; Gaviscon (combination)",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "Antacids",
   "target": "Gastric hydrochloric acid (luminal H⁺)",
   "moa": "Neutralises gastric hydrochloric acid in the stomach lumen, ↑ gastric pH and ↓ pepsin activity",
@@ -3165,7 +3206,8 @@
   "id": "famotidine",
   "name": "Famotidine",
   "brand": "Pepcid",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "H2 receptor antagonists",
   "target": "Histamine H2 receptors (gastric parietal cells)",
   "moa": "Competitively antagonises histamine at H2 receptors on gastric parietal cells, ↓ cAMP-mediated H⁺/K⁺-ATPase activity and gastric acid secretion",
@@ -3229,7 +3271,8 @@
   "id": "ranitidine",
   "name": "Ranitidine",
   "brand": "Zantac (withdrawn in many markets: NDMA)",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "H2 receptor antagonists",
   "target": "Histamine H2 receptors (gastric parietal cells)",
   "moa": "Competitively antagonises histamine at H2 receptors on gastric parietal cells, ↓ cAMP-mediated H⁺/K⁺-ATPase activity and gastric acid secretion",
@@ -3293,7 +3336,8 @@
   "id": "cimetidine",
   "name": "Cimetidine",
   "brand": "Tagamet",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "H2 receptor antagonists",
   "target": "Histamine H2 receptors (gastric parietal cells)",
   "moa": "Competitively antagonises histamine at H2 receptors on gastric parietal cells, ↓ cAMP-mediated H⁺/K⁺-ATPase activity and gastric acid secretion",
@@ -3366,7 +3410,8 @@
   "id": "nizatidine",
   "name": "Nizatidine",
   "brand": "Axid (discontinued in many markets)",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "H2 receptor antagonists",
   "target": "Histamine H2 receptors (gastric parietal cells)",
   "moa": "Competitively antagonises histamine at H2 receptors on gastric parietal cells, ↓ cAMP-mediated H⁺/K⁺-ATPase activity and gastric acid secretion",
@@ -3430,7 +3475,8 @@
   "id": "omeprazole",
   "name": "Omeprazole",
   "brand": "Losec; Acimax",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "Proton pump inhibitors",
   "target": "Gastric parietal cell H⁺/K⁺-ATPase (proton pump)",
   "moa": "Prodrug activated in the acidic canaliculi of parietal cells; irreversibly binds cysteine residues on the H⁺/K⁺-ATPase, blocking the final step of gastric acid secretion",
@@ -3515,7 +3561,8 @@
   "id": "lansoprazole",
   "name": "Lansoprazole",
   "brand": "Zoton; Prevacid",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "Proton pump inhibitors",
   "target": "Gastric parietal cell H⁺/K⁺-ATPase (proton pump)",
   "moa": "Prodrug activated in the acidic canaliculi of parietal cells; irreversibly binds cysteine residues on the H⁺/K⁺-ATPase, blocking the final step of gastric acid secretion",
@@ -3596,7 +3643,8 @@
   "id": "octreotide",
   "name": "Octreotide",
   "brand": "Sandostatin",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Other GI agents",
   "sub": "Somatostatin analogues",
   "target": "Somatostatin receptors (SSTR2, SSTR5)",
   "moa": "Binds SSTR2 and SSTR5, ↓ cAMP and inhibiting secretion of GH, glucagon, insulin, gastrin, VIP and serotonin, and ↓ splanchnic blood flow",
@@ -3674,7 +3722,8 @@
   "id": "lanreotide",
   "name": "Lanreotide",
   "brand": "Somatuline",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Other GI agents",
   "sub": "Somatostatin analogues",
   "target": "Somatostatin receptors (SSTR2, SSTR5)",
   "moa": "Binds SSTR2 and SSTR5, ↓ cAMP and inhibiting secretion of GH, glucagon, insulin, gastrin, VIP and serotonin, and ↓ splanchnic blood flow",
@@ -3751,7 +3800,8 @@
   "id": "misoprostol",
   "name": "Misoprostol",
   "brand": "Cytotec",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "Prostaglandin analogues",
   "verified": "",
   "ind": [
@@ -3820,7 +3870,8 @@
   "id": "sucralfate",
   "name": "Sucralfate",
   "brand": "Ulcyte; Carafate",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "Mucosal protectants",
   "verified": "",
   "ind": [
@@ -3891,7 +3942,8 @@
   "id": "bismuth-subcitrate",
   "name": "Bismuth subcitrate",
   "brand": "De-Nol",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Acid-related disorders",
   "sub": "Mucosal protectants",
   "verified": "",
   "ind": [
@@ -3959,8 +4011,9 @@
   "id": "psyllium",
   "name": "Psyllium",
   "brand": "Metamucil; Fybogel",
-  "cls": "Gastrointestinal",
-  "sub": "Laxatives (bulk-forming)",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Laxatives",
+  "sub": "Bulk-forming",
   "verified": "",
   "ind": [
    "Constipation",
@@ -4027,8 +4080,9 @@
   "id": "lactulose",
   "name": "Lactulose",
   "brand": "Duphalac",
-  "cls": "Gastrointestinal",
-  "sub": "Laxatives (osmotic)",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Laxatives",
+  "sub": "Osmotic",
   "target": "Colonic lumen (osmotic gradient)",
   "resp": "↑ stool water and volume; ↑ colonic transit",
   "verified": "",
@@ -4098,8 +4152,9 @@
   "id": "polyethylene-glycol",
   "name": "Polyethylene glycol (macrogol)",
   "brand": "Movicol; Osmolax",
-  "cls": "Gastrointestinal",
-  "sub": "Laxatives (osmotic)",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Laxatives",
+  "sub": "Osmotic",
   "target": "Colonic lumen (osmotic gradient)",
   "resp": "↑ stool water and volume; ↑ colonic transit",
   "verified": "",
@@ -4173,8 +4228,9 @@
   "id": "sorbitol",
   "name": "Sorbitol",
   "brand": "Various",
-  "cls": "Gastrointestinal",
-  "sub": "Laxatives (osmotic)",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Laxatives",
+  "sub": "Osmotic",
   "target": "Colonic lumen (osmotic gradient)",
   "resp": "↑ stool water and volume; ↑ colonic transit",
   "verified": "",
@@ -4240,8 +4296,9 @@
   "id": "bisacodyl",
   "name": "Bisacodyl",
   "brand": "Dulcolax",
-  "cls": "Gastrointestinal",
-  "sub": "Laxatives (stimulant)",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Laxatives",
+  "sub": "Stimulant",
   "target": "Colonic mucosa and enteric neurons",
   "resp": "↑ colonic motility and secretion; ↑ stool water",
   "verified": "",
@@ -4313,8 +4370,9 @@
   "id": "sodium-picosulfate",
   "name": "Sodium picosulfate",
   "brand": "Picolax; Durolax SP",
-  "cls": "Gastrointestinal",
-  "sub": "Laxatives (stimulant)",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Laxatives",
+  "sub": "Stimulant",
   "target": "Colonic mucosa and enteric neurons",
   "resp": "↑ colonic motility and secretion; ↑ stool water",
   "verified": "",
@@ -4392,8 +4450,9 @@
   "id": "docusate",
   "name": "Docusate",
   "brand": "Coloxyl",
-  "cls": "Gastrointestinal",
-  "sub": "Laxatives (stool softeners)",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Laxatives",
+  "sub": "Stool softeners",
   "verified": "",
   "ind": [
    "Constipation (hard stools)",
@@ -4459,8 +4518,9 @@
   "id": "loperamide",
   "name": "Loperamide",
   "brand": "Imodium",
-  "cls": "Gastrointestinal",
-  "sub": "Antidiarrhoeals (opioid agonists)",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Antidiarrhoeals & antispasmodics",
+  "sub": "Opioid agonists",
   "target": "μ-opioid receptors (enteric nervous system)",
   "resp": "↓ GI motility and secretions; ↑ stool consistency",
   "verified": "",
@@ -4535,8 +4595,9 @@
   "id": "diphenoxylate",
   "name": "Diphenoxylate (with atropine)",
   "brand": "Lomotil",
-  "cls": "Gastrointestinal",
-  "sub": "Antidiarrhoeals (opioid agonists)",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Antidiarrhoeals & antispasmodics",
+  "sub": "Opioid agonists",
   "target": "μ-opioid receptors (enteric nervous system)",
   "resp": "↓ GI motility and secretions; ↑ stool consistency",
   "verified": "",
@@ -4612,7 +4673,8 @@
   "id": "atropine",
   "name": "Atropine",
   "brand": "Atropine injection",
-  "cls": "Gastrointestinal",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Antidiarrhoeals & antispasmodics",
   "sub": "Antimuscarinics",
   "verified": "",
   "ind": [
@@ -4687,8 +4749,9 @@
   "id": "entecavir",
   "name": "Entecavir",
   "brand": "Baraclude",
-  "cls": "Antiviral",
-  "sub": "Nucleos(t)ide analogues (HBV)",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
+  "sub": "HBV nucleos(t)ide analogues",
   "target": "Viral DNA polymerase (HBV reverse transcriptase)",
   "resp": "Suppresses viral replication (↓ viral DNA)",
   "contra": [
@@ -4749,8 +4812,9 @@
   "id": "tenofovir",
   "name": "Tenofovir (TDF / TAF)",
   "brand": "Viread (TDF); Vemlidy (TAF)",
-  "cls": "Antiviral",
-  "sub": "Nucleos(t)ide analogues (HBV)",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
+  "sub": "HBV nucleos(t)ide analogues",
   "target": "Viral DNA polymerase (HBV reverse transcriptase)",
   "resp": "Suppresses viral replication (↓ viral DNA)",
   "contra": [
@@ -4826,7 +4890,8 @@
   "id": "glecaprevir",
   "name": "Glecaprevir",
   "brand": "Maviret (with pibrentasvir)",
-  "cls": "Antiviral",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
   "sub": "HCV NS3/4A protease inhibitors",
   "target": "HCV NS3/4A serine protease",
   "moa": "Inhibits the HCV NS3/4A serine protease, blocking cleavage of the viral polyprotein into functional non-structural proteins and preventing viral replication",
@@ -4903,7 +4968,8 @@
   "id": "voxilaprevir",
   "name": "Voxilaprevir",
   "brand": "Vosevi (with sofosbuvir + velpatasvir)",
-  "cls": "Antiviral",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
   "sub": "HCV NS3/4A protease inhibitors",
   "target": "HCV NS3/4A serine protease",
   "moa": "Inhibits the HCV NS3/4A serine protease, blocking cleavage of the viral polyprotein into functional non-structural proteins and preventing viral replication",
@@ -4984,7 +5050,8 @@
   "id": "grazoprevir",
   "name": "Grazoprevir",
   "brand": "Zepatier (with elbasvir)",
-  "cls": "Antiviral",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
   "sub": "HCV NS3/4A protease inhibitors",
   "target": "HCV NS3/4A serine protease",
   "moa": "Inhibits the HCV NS3/4A serine protease, blocking cleavage of the viral polyprotein into functional non-structural proteins and preventing viral replication",
@@ -5061,7 +5128,8 @@
   "id": "daclatasvir",
   "name": "Daclatasvir",
   "brand": "Daklinza (withdrawn in many markets)",
-  "cls": "Antiviral",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
   "sub": "HCV NS5A inhibitors",
   "target": "HCV NS5A protein",
   "moa": "Binds HCV NS5A, impairing viral RNA replication and virion assembly",
@@ -5132,7 +5200,8 @@
   "id": "velpatasvir",
   "name": "Velpatasvir",
   "brand": "Epclusa (with sofosbuvir)",
-  "cls": "Antiviral",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
   "sub": "HCV NS5A inhibitors",
   "target": "HCV NS5A protein",
   "moa": "Binds HCV NS5A, impairing viral RNA replication and virion assembly",
@@ -5208,7 +5277,8 @@
   "id": "ledipasvir",
   "name": "Ledipasvir",
   "brand": "Harvoni (with sofosbuvir)",
-  "cls": "Antiviral",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
   "sub": "HCV NS5A inhibitors",
   "target": "HCV NS5A protein",
   "moa": "Binds HCV NS5A, impairing viral RNA replication and virion assembly",
@@ -5283,7 +5353,8 @@
   "id": "pibrentasvir",
   "name": "Pibrentasvir",
   "brand": "Maviret (with glecaprevir)",
-  "cls": "Antiviral",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
   "sub": "HCV NS5A inhibitors",
   "target": "HCV NS5A protein",
   "moa": "Binds HCV NS5A, impairing viral RNA replication and virion assembly",
@@ -5354,7 +5425,8 @@
   "id": "elbasvir",
   "name": "Elbasvir",
   "brand": "Zepatier (with grazoprevir)",
-  "cls": "Antiviral",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
   "sub": "HCV NS5A inhibitors",
   "target": "HCV NS5A protein",
   "moa": "Binds HCV NS5A, impairing viral RNA replication and virion assembly",
@@ -5425,7 +5497,8 @@
   "id": "sofosbuvir",
   "name": "Sofosbuvir",
   "brand": "Sovaldi",
-  "cls": "Antiviral",
+  "family": "Anti-infective",
+  "cls": "Antivirals",
   "sub": "HCV NS5B polymerase inhibitors",
   "ind": [
    "Chronic hepatitis C (pan-genotypic; with NS5A inhibitor)"
@@ -5501,7 +5574,8 @@
   "id": "ursodeoxycholic-acid",
   "name": "Ursodeoxycholic acid",
   "brand": "Ursofalk; Actigall",
-  "cls": "Hepatobiliary",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Hepatobiliary agents",
   "sub": "Bile acids",
   "verified": "",
   "ind": [
@@ -5574,7 +5648,8 @@
   "id": "cholestyramine",
   "name": "Cholestyramine",
   "brand": "Questran",
-  "cls": "Hepatobiliary",
+  "family": "Gastrointestinal & hepatobiliary",
+  "cls": "Hepatobiliary agents",
   "sub": "Bile acid sequestrants",
   "verified": "",
   "ind": [
@@ -5650,7 +5725,8 @@
   "id": "paracetamol",
   "name": "Paracetamol (acetaminophen)",
   "brand": "Panadol; Ofirmev (IV)",
-  "cls": "Analgesic",
+  "family": "Analgesia & toxicology",
+  "cls": "Analgesics",
   "sub": "Non-opioid analgesics",
   "verified": "",
   "ind": [
@@ -5728,8 +5804,9 @@
   "id": "n-acetylcysteine",
   "name": "N-acetylcysteine",
   "brand": "Parvolex; Mucomyst",
-  "cls": "Antidote",
-  "sub": "Antidotes (paracetamol)",
+  "family": "Analgesia & toxicology",
+  "cls": "Antidotes",
+  "sub": "Paracetamol overdose",
   "verified": "",
   "ind": [
    "Paracetamol overdose",
@@ -5800,10 +5877,11 @@
   "id": "valproate",
   "name": "Valproate",
   "brand": "Epilim; Depakote",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "Other antiseizure agents",
+  "sub": "Multi-mechanism antiseizure",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "Multi-mechanism antiseizure",
   "ind": [
    "Generalised epilepsy (absence, myoclonic, tonic-clonic)",
    "Focal epilepsy",
@@ -5885,10 +5963,11 @@
   "id": "phenytoin",
   "name": "Phenytoin",
   "brand": "Dilantin; Dilantin IV (fosphenytoin: Cerebyx)",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "Other antiseizure agents",
+  "sub": "Sodium channel blockers",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "Sodium channel blockers",
   "target": "Voltage-gated sodium channels (neuronal)",
   "moa": "Binds the inactivated state of voltage-gated sodium channels, prolonging inactivation and ↓ repetitive neuronal firing and spread of seizure activity",
   "ind": [
@@ -5968,10 +6047,11 @@
   "id": "topiramate",
   "name": "Topiramate",
   "brand": "Topamax",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "Other antiseizure agents",
+  "sub": "Multi-mechanism antiseizure",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "Multi-mechanism antiseizure",
   "ind": [
    "Focal and generalised tonic-clonic seizures",
    "Migraine prophylaxis",
@@ -6054,10 +6134,11 @@
   "id": "lamotrigine",
   "name": "Lamotrigine",
   "brand": "Lamictal",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "Other antiseizure agents",
+  "sub": "Sodium channel blockers",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "Sodium channel blockers",
   "target": "Voltage-gated sodium channels (neuronal)",
   "moa": "Binds the inactivated state of voltage-gated sodium channels, prolonging inactivation and ↓ repetitive neuronal firing and spread of seizure activity and ↓ glutamate release",
   "ind": [
@@ -6134,10 +6215,11 @@
   "id": "carbamazepine",
   "name": "Carbamazepine",
   "brand": "Tegretol",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "Other antiseizure agents",
+  "sub": "Sodium channel blockers",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "Sodium channel blockers",
   "target": "Voltage-gated sodium channels (neuronal)",
   "moa": "Binds the inactivated state of voltage-gated sodium channels, prolonging inactivation and ↓ repetitive neuronal firing and spread of seizure activity",
   "ind": [
@@ -6220,10 +6302,11 @@
   "id": "levetiracetam",
   "name": "Levetiracetam",
   "brand": "Keppra",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "Other antiseizure agents",
+  "sub": "SV2A ligands",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "SV2A ligands",
   "ind": [
    "Focal seizures",
    "Generalised tonic-clonic seizures",
@@ -6290,10 +6373,11 @@
   "id": "brivaracetam",
   "name": "Brivaracetam",
   "brand": "Briviact",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "Other antiseizure agents",
+  "sub": "SV2A ligands",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "SV2A ligands",
   "ind": [
    "Focal seizures (adjunct / monotherapy)"
   ],
@@ -6364,10 +6448,11 @@
   "id": "ethosuximide",
   "name": "Ethosuximide",
   "brand": "Zarontin",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "Other antiseizure agents",
+  "sub": "T-type calcium channel blockers",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "T-type calcium channel blockers",
   "ind": [
    "Absence seizures (first line in children)"
   ],
@@ -6435,10 +6520,11 @@
   "id": "perampanel",
   "name": "Perampanel",
   "brand": "Fycompa",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "Other antiseizure agents",
+  "sub": "AMPA receptor antagonists",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "AMPA receptor antagonists",
   "ind": [
    "Focal seizures (adjunct)",
    "Generalised tonic-clonic seizures (adjunct)"
@@ -6513,7 +6599,8 @@
   "id": "lorazepam",
   "name": "Lorazepam",
   "brand": "Ativan",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "GABAergic antiseizure agents",
   "sub": "Benzodiazepines",
   "target": "GABA-A receptors (benzodiazepine site)",
   "moa": "Positive allosteric modulator at the benzodiazepine site of GABA-A receptors, ↑ frequency of chloride channel opening and causing neuronal hyperpolarisation and CNS depression",
@@ -6586,7 +6673,8 @@
   "id": "diazepam",
   "name": "Diazepam",
   "brand": "Valium; Ducene",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "GABAergic antiseizure agents",
   "sub": "Benzodiazepines",
   "target": "GABA-A receptors (benzodiazepine site)",
   "moa": "Positive allosteric modulator at the benzodiazepine site of GABA-A receptors, ↑ frequency of chloride channel opening and causing neuronal hyperpolarisation and CNS depression",
@@ -6659,7 +6747,8 @@
   "id": "midazolam",
   "name": "Midazolam",
   "brand": "Hypnovel; Buccolam",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "GABAergic antiseizure agents",
   "sub": "Benzodiazepines",
   "target": "GABA-A receptors (benzodiazepine site)",
   "moa": "Positive allosteric modulator at the benzodiazepine site of GABA-A receptors, ↑ frequency of chloride channel opening and causing neuronal hyperpolarisation and CNS depression",
@@ -6732,10 +6821,11 @@
   "id": "vigabatrin",
   "name": "Vigabatrin",
   "brand": "Sabril",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "GABAergic antiseizure agents",
+  "sub": "GABA transaminase inhibitors",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "GABA transaminase inhibitors",
   "ind": [
    "Infantile spasms (first line, tuberous sclerosis)",
    "Refractory focal seizures (adjunct)"
@@ -6806,10 +6896,11 @@
   "id": "tiagabine",
   "name": "Tiagabine",
   "brand": "Gabitril",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "GABAergic antiseizure agents",
+  "sub": "GABA reuptake inhibitors",
   "resp": "↓ neuronal excitability; seizure suppression",
   "verified": "",
-  "sub": "GABA reuptake inhibitors",
   "ind": [
    "Focal seizures (adjunct)"
   ],
@@ -6879,10 +6970,11 @@
   "id": "phenobarbital",
   "name": "Phenobarbital",
   "brand": "Phenobarbitone",
-  "cls": "Antiseizure",
+  "family": "Neurology & anaesthesia",
+  "cls": "GABAergic antiseizure agents",
+  "sub": "Barbiturates",
   "resp": "↓ neuronal excitability; sedative; anticonvulsant",
   "verified": "",
-  "sub": "Barbiturates",
   "ind": [
    "Tonic-clonic and focal seizures",
    "Neonatal seizures (first line)",
@@ -6959,7 +7051,8 @@
   "id": "propofol",
   "name": "Propofol",
   "brand": "Diprivan",
-  "cls": "Anaesthetic / sedative",
+  "family": "Neurology & anaesthesia",
+  "cls": "Anaesthetics & sedatives",
   "sub": "General anaesthetics (GABA-A)",
   "verified": "",
   "ind": [
@@ -7040,7 +7133,8 @@
   "id": "ketamine",
   "name": "Ketamine",
   "brand": "Ketalar",
-  "cls": "Anaesthetic / sedative",
+  "family": "Neurology & anaesthesia",
+  "cls": "Anaesthetics & sedatives",
   "sub": "General anaesthetics (NMDA antagonists)",
   "verified": "",
   "ind": [
@@ -7123,7 +7217,9 @@
   "id": "aspirin",
   "name": "Aspirin (acetylsalicylic acid)",
   "brand": "Aspro; Cartia (low dose)",
-  "cls": "Analgesic",
+  "family": "Analgesia & toxicology",
+  "cls": "Analgesics",
+  "sub": "NSAIDs (non-selective)",
   "target": "Cyclooxygenase-1 and -2 (COX-1 / COX-2)",
   "contra": [
    "Hypersensitivity to NSAIDs (incl. aspirin-exacerbated asthma)",
@@ -7157,7 +7253,6 @@
    "Stevens-Johnson syndrome / TEN"
   ],
   "verified": "",
-  "sub": "NSAIDs (non-selective)",
   "ind": [
    "Secondary prevention of MI / stroke (low dose)",
    "Acute coronary syndrome",
@@ -7226,7 +7321,9 @@
   "id": "ibuprofen",
   "name": "Ibuprofen",
   "brand": "Nurofen; Brufen",
-  "cls": "Analgesic",
+  "family": "Analgesia & toxicology",
+  "cls": "Analgesics",
+  "sub": "NSAIDs (non-selective)",
   "target": "Cyclooxygenase-1 and -2 (COX-1 / COX-2)",
   "contra": [
    "Hypersensitivity to NSAIDs (incl. aspirin-exacerbated asthma)",
@@ -7256,7 +7353,6 @@
    "Stevens-Johnson syndrome / TEN"
   ],
   "verified": "",
-  "sub": "NSAIDs (non-selective)",
   "ind": [
    "Mild–moderate pain",
    "Fever",
@@ -7325,7 +7421,9 @@
   "id": "celecoxib",
   "name": "Celecoxib",
   "brand": "Celebrex",
-  "cls": "Analgesic",
+  "family": "Analgesia & toxicology",
+  "cls": "Analgesics",
+  "sub": "NSAIDs (COX-2 selective)",
   "target": "Cyclooxygenase-1 and -2 (COX-1 / COX-2)",
   "contra": [
    "Hypersensitivity to NSAIDs (incl. aspirin-exacerbated asthma)",
@@ -7357,7 +7455,6 @@
    "Stevens-Johnson syndrome / TEN"
   ],
   "verified": "",
-  "sub": "NSAIDs (COX-2 selective)",
   "ind": [
    "Osteoarthritis",
    "Rheumatoid arthritis",
@@ -7426,7 +7523,8 @@
   "id": "leflunomide",
   "name": "Leflunomide",
   "brand": "Arava",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Conventional DMARDs & immunosuppressants",
   "sub": "Pyrimidine synthesis inhibitors",
   "verified": "",
   "ind": [
@@ -7514,7 +7612,8 @@
   "id": "hydroxychloroquine",
   "name": "Hydroxychloroquine",
   "brand": "Plaquenil",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Conventional DMARDs & immunosuppressants",
   "sub": "Antimalarial DMARDs",
   "verified": "",
   "ind": [
@@ -7599,7 +7698,8 @@
   "id": "tocilizumab",
   "name": "Tocilizumab",
   "brand": "Actemra",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Biologics",
   "sub": "IL-6 inhibitors",
   "verified": "",
   "ind": [
@@ -7683,7 +7783,8 @@
   "id": "secukinumab",
   "name": "Secukinumab",
   "brand": "Cosentyx",
-  "cls": "Immunomodulator",
+  "family": "Immunology & rheumatology",
+  "cls": "Biologics",
   "sub": "IL-17 inhibitors",
   "verified": "",
   "ind": [
@@ -7756,8 +7857,9 @@
   "id": "upadacitinib",
   "name": "Upadacitinib",
   "brand": "Rinvoq",
-  "cls": "Immunomodulator",
-  "sub": "JAK inhibitors",
+  "family": "Immunology & rheumatology",
+  "cls": "JAK inhibitors",
+  "sub": "",
   "target": "Janus kinases (JAK1 / JAK2 / JAK3 / TYK2)",
   "moa": "Inhibits Janus kinases, blocking STAT phosphorylation and ↓ intracellular signalling of multiple pro-inflammatory cytokines (e.g. IL-6, IFN-γ, γc cytokines)",
   "resp": "Anti-inflammatory and immunosuppressive",
@@ -7845,8 +7947,9 @@
   "id": "baricitinib",
   "name": "Baricitinib",
   "brand": "Olumiant",
-  "cls": "Immunomodulator",
-  "sub": "JAK inhibitors",
+  "family": "Immunology & rheumatology",
+  "cls": "JAK inhibitors",
+  "sub": "",
   "target": "Janus kinases (JAK1 / JAK2 / JAK3 / TYK2)",
   "moa": "Inhibits Janus kinases, blocking STAT phosphorylation and ↓ intracellular signalling of multiple pro-inflammatory cytokines (e.g. IL-6, IFN-γ, γc cytokines)",
   "resp": "Anti-inflammatory and immunosuppressive",
@@ -7932,8 +8035,9 @@
   "id": "tofacitinib",
   "name": "Tofacitinib",
   "brand": "Xeljanz",
-  "cls": "Immunomodulator",
-  "sub": "JAK inhibitors",
+  "family": "Immunology & rheumatology",
+  "cls": "JAK inhibitors",
+  "sub": "",
   "target": "Janus kinases (JAK1 / JAK2 / JAK3 / TYK2)",
   "moa": "Inhibits Janus kinases, blocking STAT phosphorylation and ↓ intracellular signalling of multiple pro-inflammatory cytokines (e.g. IL-6, IFN-γ, γc cytokines)",
   "resp": "Anti-inflammatory and immunosuppressive",
@@ -8020,7 +8124,8 @@
   "id": "alendronate",
   "name": "Alendronate",
   "brand": "Fosamax",
-  "cls": "Bone metabolism",
+  "family": "Bone metabolism",
+  "cls": "Antiresorptive agents",
   "sub": "Bisphosphonates",
   "target": "Osteoclast farnesyl pyrophosphate synthase (bone)",
   "moa": "Bind hydroxyapatite in bone and are taken up by osteoclasts, where they inhibit farnesyl pyrophosphate synthase, impairing osteoclast function and inducing apoptosis, ↓ bone resorption",
@@ -8096,7 +8201,8 @@
   "id": "risedronate",
   "name": "Risedronate",
   "brand": "Actonel",
-  "cls": "Bone metabolism",
+  "family": "Bone metabolism",
+  "cls": "Antiresorptive agents",
   "sub": "Bisphosphonates",
   "target": "Osteoclast farnesyl pyrophosphate synthase (bone)",
   "moa": "Bind hydroxyapatite in bone and are taken up by osteoclasts, where they inhibit farnesyl pyrophosphate synthase, impairing osteoclast function and inducing apoptosis, ↓ bone resorption",
@@ -8172,7 +8278,8 @@
   "id": "zoledronic-acid",
   "name": "Zoledronic acid",
   "brand": "Aclasta; Zometa",
-  "cls": "Bone metabolism",
+  "family": "Bone metabolism",
+  "cls": "Antiresorptive agents",
   "sub": "Bisphosphonates",
   "target": "Osteoclast farnesyl pyrophosphate synthase (bone)",
   "moa": "Bind hydroxyapatite in bone and are taken up by osteoclasts, where they inhibit farnesyl pyrophosphate synthase, impairing osteoclast function and inducing apoptosis, ↓ bone resorption",
@@ -8246,7 +8353,8 @@
   "id": "raloxifene",
   "name": "Raloxifene",
   "brand": "Evista",
-  "cls": "Bone metabolism",
+  "family": "Bone metabolism",
+  "cls": "Antiresorptive agents",
   "sub": "Selective oestrogen receptor modulators",
   "verified": "",
   "ind": [
@@ -8327,7 +8435,8 @@
   "id": "denosumab",
   "name": "Denosumab",
   "brand": "Prolia; Xgeva",
-  "cls": "Bone metabolism",
+  "family": "Bone metabolism",
+  "cls": "Antiresorptive agents",
   "sub": "RANKL inhibitors",
   "verified": "",
   "ind": [
@@ -8402,7 +8511,8 @@
   "id": "teriparatide",
   "name": "Teriparatide",
   "brand": "Forteo",
-  "cls": "Bone metabolism",
+  "family": "Bone metabolism",
+  "cls": "Anabolic agents",
   "sub": "Parathyroid hormone analogues",
   "verified": "",
   "ind": [
@@ -8479,7 +8589,8 @@
   "id": "romosozumab",
   "name": "Romosozumab",
   "brand": "Evenity",
-  "cls": "Bone metabolism",
+  "family": "Bone metabolism",
+  "cls": "Anabolic agents",
   "sub": "Sclerostin inhibitors",
   "verified": "",
   "ind": [
@@ -8546,7 +8657,9 @@
   "id": "salbutamol",
   "name": "Salbutamol (albuterol)",
   "brand": "Ventolin; Asmol",
-  "cls": "Respiratory",
+  "family": "Respiratory & allergy",
+  "cls": "Bronchodilators",
+  "sub": "Short-acting β2 agonists (SABA)",
   "target": "β2-adrenergic receptors (airway smooth muscle)",
   "moa": "Agonises β2-adrenergic receptors on airway smooth muscle, ↑ intracellular cAMP via adenylyl cyclase, causing smooth muscle relaxation and bronchodilation",
   "common": [
@@ -8566,7 +8679,6 @@
    "Anaphylaxis"
   ],
   "verified": "",
-  "sub": "Short-acting β2 agonists (SABA)",
   "resp": "Rapid-onset bronchodilation (duration 4–6 h)",
   "contra": [
    "Hypersensitivity to the drug"
@@ -8624,7 +8736,9 @@
   "id": "fenoterol",
   "name": "Fenoterol",
   "brand": "Berotec (limited availability)",
-  "cls": "Respiratory",
+  "family": "Respiratory & allergy",
+  "cls": "Bronchodilators",
+  "sub": "Short-acting β2 agonists (SABA)",
   "target": "β2-adrenergic receptors (airway smooth muscle)",
   "moa": "Agonises β2-adrenergic receptors on airway smooth muscle, ↑ intracellular cAMP via adenylyl cyclase, causing smooth muscle relaxation and bronchodilation",
   "common": [
@@ -8644,7 +8758,6 @@
    "Anaphylaxis"
   ],
   "verified": "",
-  "sub": "Short-acting β2 agonists (SABA)",
   "resp": "Rapid-onset bronchodilation (duration 4–6 h)",
   "contra": [
    "Hypersensitivity to the drug",
@@ -8699,7 +8812,9 @@
   "id": "salmeterol",
   "name": "Salmeterol",
   "brand": "Serevent",
-  "cls": "Respiratory",
+  "family": "Respiratory & allergy",
+  "cls": "Bronchodilators",
+  "sub": "Long-acting β2 agonists (LABA)",
   "target": "β2-adrenergic receptors (airway smooth muscle)",
   "moa": "Agonises β2-adrenergic receptors on airway smooth muscle, ↑ intracellular cAMP via adenylyl cyclase, causing smooth muscle relaxation and bronchodilation",
   "common": [
@@ -8720,7 +8835,6 @@
    "Asthma-related death (LABA monotherapy)"
   ],
   "verified": "",
-  "sub": "Long-acting β2 agonists (LABA)",
   "resp": "Long-acting bronchodilation (≥12 h); always with ICS in asthma",
   "contra": [
    "Hypersensitivity to the drug",
@@ -8783,7 +8897,9 @@
   "id": "formoterol",
   "name": "Formoterol",
   "brand": "Oxis; Foradile",
-  "cls": "Respiratory",
+  "family": "Respiratory & allergy",
+  "cls": "Bronchodilators",
+  "sub": "Long-acting β2 agonists (LABA)",
   "target": "β2-adrenergic receptors (airway smooth muscle)",
   "moa": "Agonises β2-adrenergic receptors on airway smooth muscle, ↑ intracellular cAMP via adenylyl cyclase, causing smooth muscle relaxation and bronchodilation",
   "common": [
@@ -8804,7 +8920,6 @@
    "Asthma-related death (LABA monotherapy)"
   ],
   "verified": "",
-  "sub": "Long-acting β2 agonists (LABA)",
   "resp": "Long-acting bronchodilation (≥12 h); always with ICS in asthma",
   "contra": [
    "Hypersensitivity to the drug",
@@ -8863,7 +8978,9 @@
   "id": "indacaterol",
   "name": "Indacaterol",
   "brand": "Onbrez",
-  "cls": "Respiratory",
+  "family": "Respiratory & allergy",
+  "cls": "Bronchodilators",
+  "sub": "Long-acting β2 agonists (LABA)",
   "target": "β2-adrenergic receptors (airway smooth muscle)",
   "moa": "Agonises β2-adrenergic receptors on airway smooth muscle, ↑ intracellular cAMP via adenylyl cyclase, causing smooth muscle relaxation and bronchodilation",
   "common": [
@@ -8884,7 +9001,6 @@
    "Asthma-related death (LABA monotherapy)"
   ],
   "verified": "",
-  "sub": "Long-acting β2 agonists (LABA)",
   "resp": "Long-acting bronchodilation (≥12 h); always with ICS in asthma",
   "contra": [
    "Hypersensitivity to the drug",
@@ -8941,7 +9057,9 @@
   "id": "vilanterol",
   "name": "Vilanterol",
   "brand": "Breo (with fluticasone); Anoro (with umeclidinium)",
-  "cls": "Respiratory",
+  "family": "Respiratory & allergy",
+  "cls": "Bronchodilators",
+  "sub": "Long-acting β2 agonists (LABA)",
   "target": "β2-adrenergic receptors (airway smooth muscle)",
   "moa": "Agonises β2-adrenergic receptors on airway smooth muscle, ↑ intracellular cAMP via adenylyl cyclase, causing smooth muscle relaxation and bronchodilation",
   "common": [
@@ -8962,7 +9080,6 @@
    "Asthma-related death (LABA monotherapy)"
   ],
   "verified": "",
-  "sub": "Long-acting β2 agonists (LABA)",
   "resp": "Long-acting bronchodilation (≥12 h); always with ICS in asthma",
   "contra": [
    "Hypersensitivity to the drug",
@@ -9021,7 +9138,9 @@
   "id": "ipratropium",
   "name": "Ipratropium bromide",
   "brand": "Atrovent",
-  "cls": "Respiratory",
+  "family": "Respiratory & allergy",
+  "cls": "Bronchodilators",
+  "sub": "Short-acting muscarinic antagonists (SAMA)",
   "target": "Muscarinic M3 receptors (airway smooth muscle)",
   "contra": [
    "Hypersensitivity to atropine derivatives"
@@ -9042,7 +9161,6 @@
    "Anaphylaxis"
   ],
   "verified": "",
-  "sub": "Short-acting muscarinic antagonists (SAMA)",
   "ind": [
    "Acute severe asthma (adjunct to SABA)",
    "COPD exacerbation / maintenance",
@@ -9090,7 +9208,9 @@
   "id": "tiotropium",
   "name": "Tiotropium bromide",
   "brand": "Spiriva",
-  "cls": "Respiratory",
+  "family": "Respiratory & allergy",
+  "cls": "Bronchodilators",
+  "sub": "Long-acting muscarinic antagonists (LAMA)",
   "target": "Muscarinic M3 receptors (airway smooth muscle)",
   "contra": [
    "Hypersensitivity to atropine derivatives"
@@ -9111,7 +9231,6 @@
    "Anaphylaxis"
   ],
   "verified": "",
-  "sub": "Long-acting muscarinic antagonists (LAMA)",
   "ind": [
    "COPD (maintenance)",
    "Asthma (add-on)"
@@ -9158,7 +9277,8 @@
   "id": "roflumilast",
   "name": "Roflumilast",
   "brand": "Daxas",
-  "cls": "Respiratory",
+  "family": "Respiratory & allergy",
+  "cls": "Other respiratory agents",
   "sub": "PDE4 inhibitors",
   "verified": "",
   "ind": [
@@ -9230,7 +9350,8 @@
   "id": "diphenhydramine",
   "name": "Diphenhydramine",
   "brand": "Benadryl",
-  "cls": "Antihistamine",
+  "family": "Respiratory & allergy",
+  "cls": "Antihistamines",
   "sub": "First-generation H1 antagonists",
   "target": "Histamine H1 receptors (peripheral and CNS); muscarinic receptors",
   "moa": "Competitively antagonises histamine at H1 receptors and crosses the BBB with additional muscarinic M1 blockade, ↓ histamine-mediated effects and vestibular / vomiting-centre stimulation",
@@ -9316,7 +9437,8 @@
   "id": "dimenhydrinate",
   "name": "Dimenhydrinate",
   "brand": "Dramamine; Travacalm",
-  "cls": "Antihistamine",
+  "family": "Respiratory & allergy",
+  "cls": "Antihistamines",
   "sub": "First-generation H1 antagonists",
   "target": "Histamine H1 receptors (peripheral and CNS); muscarinic receptors",
   "moa": "Competitively antagonises histamine at H1 receptors and crosses the BBB with additional muscarinic M1 blockade, ↓ histamine-mediated effects and vestibular / vomiting-centre stimulation",
@@ -9400,7 +9522,8 @@
   "id": "cetirizine",
   "name": "Cetirizine",
   "brand": "Zyrtec",
-  "cls": "Antihistamine",
+  "family": "Respiratory & allergy",
+  "cls": "Antihistamines",
   "sub": "Second-generation H1 antagonists",
   "target": "Peripheral histamine H1 receptors",
   "moa": "Selectively antagonises peripheral H1 receptors with minimal CNS penetration (P-gp efflux), ↓ histamine-mediated vasodilation, vascular permeability, pruritus and sneezing",
@@ -9469,7 +9592,8 @@
   "id": "fexofenadine",
   "name": "Fexofenadine",
   "brand": "Telfast",
-  "cls": "Antihistamine",
+  "family": "Respiratory & allergy",
+  "cls": "Antihistamines",
   "sub": "Second-generation H1 antagonists",
   "target": "Peripheral histamine H1 receptors",
   "moa": "Selectively antagonises peripheral H1 receptors with minimal CNS penetration (P-gp efflux), ↓ histamine-mediated vasodilation, vascular permeability, pruritus and sneezing",
@@ -9541,7 +9665,8 @@
   "id": "loratadine",
   "name": "Loratadine",
   "brand": "Claratyne",
-  "cls": "Antihistamine",
+  "family": "Respiratory & allergy",
+  "cls": "Antihistamines",
   "sub": "Second-generation H1 antagonists",
   "target": "Peripheral histamine H1 receptors",
   "moa": "Selectively antagonises peripheral H1 receptors with minimal CNS penetration (P-gp efflux), ↓ histamine-mediated vasodilation, vascular permeability, pruritus and sneezing",
@@ -9609,7 +9734,8 @@
   "id": "rifampicin",
   "name": "Rifampicin (rifampin)",
   "brand": "Rifadin; Rimactane",
-  "cls": "Antibacterial",
+  "family": "Anti-infective",
+  "cls": "Antimycobacterials",
   "sub": "Rifamycins",
   "target": "Bacterial DNA-dependent RNA polymerase (β subunit)",
   "moa": "Binds the β subunit of bacterial DNA-dependent RNA polymerase, blocking RNA chain elongation and inhibiting transcription",
@@ -9684,7 +9810,8 @@
   "id": "rifapentine",
   "name": "Rifapentine",
   "brand": "Priftin (availability varies)",
-  "cls": "Antibacterial",
+  "family": "Anti-infective",
+  "cls": "Antimycobacterials",
   "sub": "Rifamycins",
   "target": "Bacterial DNA-dependent RNA polymerase (β subunit)",
   "moa": "Binds the β subunit of bacterial DNA-dependent RNA polymerase, blocking RNA chain elongation and inhibiting transcription",
@@ -9757,7 +9884,8 @@
   "id": "rifabutin",
   "name": "Rifabutin",
   "brand": "Mycobutin",
-  "cls": "Antibacterial",
+  "family": "Anti-infective",
+  "cls": "Antimycobacterials",
   "sub": "Rifamycins",
   "target": "Bacterial DNA-dependent RNA polymerase (β subunit)",
   "moa": "Binds the β subunit of bacterial DNA-dependent RNA polymerase, blocking RNA chain elongation and inhibiting transcription",
@@ -9834,8 +9962,9 @@
   "id": "isoniazid",
   "name": "Isoniazid",
   "brand": "Isoniazid",
-  "cls": "Antibacterial",
-  "sub": "Antimycobacterial agents",
+  "family": "Anti-infective",
+  "cls": "Antimycobacterials",
+  "sub": "Other first-line anti-TB agents",
   "verified": "",
   "ind": [
    "Active TB (first line)",
@@ -9924,8 +10053,9 @@
   "id": "pyrazinamide",
   "name": "Pyrazinamide",
   "brand": "Pyrazinamide",
-  "cls": "Antibacterial",
-  "sub": "Antimycobacterial agents",
+  "family": "Anti-infective",
+  "cls": "Antimycobacterials",
+  "sub": "Other first-line anti-TB agents",
   "verified": "",
   "ind": [
    "Active TB (intensive phase, first line)"
@@ -9999,8 +10129,9 @@
   "id": "ethambutol",
   "name": "Ethambutol",
   "brand": "Myambutol",
-  "cls": "Antibacterial",
-  "sub": "Antimycobacterial agents",
+  "family": "Anti-infective",
+  "cls": "Antimycobacterials",
+  "sub": "Other first-line anti-TB agents",
   "verified": "",
   "ind": [
    "Active TB (first line; prevents resistance)",
@@ -10073,7 +10204,8 @@
   "id": "warfarin",
   "name": "Warfarin",
   "brand": "Coumadin; Marevan",
-  "cls": "Haematological",
+  "family": "Haematological",
+  "cls": "Anticoagulants",
   "sub": "Vitamin K antagonists",
   "verified": "",
   "ind": [
@@ -10160,7 +10292,8 @@
   "id": "heparin",
   "name": "Heparin (unfractionated)",
   "brand": "Hepalean; Pfizer heparin",
-  "cls": "Haematological",
+  "family": "Haematological",
+  "cls": "Anticoagulants",
   "sub": "Heparins",
   "verified": "",
   "ind": [
@@ -10239,7 +10372,8 @@
   "id": "apixaban",
   "name": "Apixaban",
   "brand": "Eliquis",
-  "cls": "Haematological",
+  "family": "Haematological",
+  "cls": "Anticoagulants",
   "sub": "Direct factor Xa inhibitors",
   "target": "Factor Xa (free and clot-bound)",
   "moa": "Directly and selectively inhibits free and clot-bound factor Xa, ↓ thrombin generation and thrombus formation",
@@ -10316,7 +10450,8 @@
   "id": "rivaroxaban",
   "name": "Rivaroxaban",
   "brand": "Xarelto",
-  "cls": "Haematological",
+  "family": "Haematological",
+  "cls": "Anticoagulants",
   "sub": "Direct factor Xa inhibitors",
   "target": "Factor Xa (free and clot-bound)",
   "moa": "Directly and selectively inhibits free and clot-bound factor Xa, ↓ thrombin generation and thrombus formation",
@@ -10398,7 +10533,8 @@
   "id": "dabigatran",
   "name": "Dabigatran",
   "brand": "Pradaxa",
-  "cls": "Haematological",
+  "family": "Haematological",
+  "cls": "Anticoagulants",
   "sub": "Direct thrombin inhibitors",
   "verified": "",
   "ind": [
@@ -10480,7 +10616,8 @@
   "id": "atorvastatin",
   "name": "Atorvastatin",
   "brand": "Lipitor",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Lipid-lowering agents",
   "sub": "Statins (HMG-CoA reductase inhibitors)",
   "target": "HMG-CoA reductase (hepatic)",
   "moa": "Competitively inhibits HMG-CoA reductase, ↓ hepatic cholesterol synthesis and ↑ LDL receptor expression, ↑ LDL clearance from plasma",
@@ -10565,7 +10702,8 @@
   "id": "rosuvastatin",
   "name": "Rosuvastatin",
   "brand": "Crestor",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Lipid-lowering agents",
   "sub": "Statins (HMG-CoA reductase inhibitors)",
   "target": "HMG-CoA reductase (hepatic)",
   "moa": "Competitively inhibits HMG-CoA reductase, ↓ hepatic cholesterol synthesis and ↑ LDL receptor expression, ↑ LDL clearance from plasma",
@@ -10650,7 +10788,8 @@
   "id": "simvastatin",
   "name": "Simvastatin",
   "brand": "Zocor",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Lipid-lowering agents",
   "sub": "Statins (HMG-CoA reductase inhibitors)",
   "target": "HMG-CoA reductase (hepatic)",
   "moa": "Competitively inhibits HMG-CoA reductase, ↓ hepatic cholesterol synthesis and ↑ LDL receptor expression, ↑ LDL clearance from plasma",
@@ -10732,7 +10871,8 @@
   "id": "fenofibrate",
   "name": "Fenofibrate",
   "brand": "Lipidil; Tricor",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Lipid-lowering agents",
   "sub": "Fibrates (PPAR-α agonists)",
   "target": "PPAR-α (nuclear receptor)",
   "moa": "Agonises PPAR-α, ↑ lipoprotein lipase and apolipoprotein A-I / A-II expression and ↓ apoC-III, ↑ VLDL catabolism and ↑ HDL",
@@ -10813,7 +10953,8 @@
   "id": "gemfibrozil",
   "name": "Gemfibrozil",
   "brand": "Lopid",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Lipid-lowering agents",
   "sub": "Fibrates (PPAR-α agonists)",
   "target": "PPAR-α (nuclear receptor)",
   "moa": "Agonises PPAR-α, ↑ lipoprotein lipase and apolipoprotein A-I / A-II expression and ↓ apoC-III, ↑ VLDL catabolism and ↑ HDL",
@@ -10897,7 +11038,8 @@
   "id": "evolocumab",
   "name": "Evolocumab",
   "brand": "Repatha",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Lipid-lowering agents",
   "sub": "PCSK9 inhibitors",
   "target": "PCSK9 (proprotein convertase subtilisin / kexin type 9)",
   "moa": "Monoclonal antibody binding circulating PCSK9, preventing PCSK9-mediated degradation of LDL receptors, ↑ hepatic LDL receptor recycling and LDL-C clearance",
@@ -10961,7 +11103,8 @@
   "id": "alirocumab",
   "name": "Alirocumab",
   "brand": "Praluent",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Lipid-lowering agents",
   "sub": "PCSK9 inhibitors",
   "target": "PCSK9 (proprotein convertase subtilisin / kexin type 9)",
   "moa": "Monoclonal antibody binding circulating PCSK9, preventing PCSK9-mediated degradation of LDL receptors, ↑ hepatic LDL receptor recycling and LDL-C clearance",
@@ -11025,7 +11168,8 @@
   "id": "ezetimibe",
   "name": "Ezetimibe",
   "brand": "Ezetrol",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Lipid-lowering agents",
   "sub": "Cholesterol absorption inhibitors",
   "verified": "",
   "ind": [
@@ -11104,7 +11248,8 @@
   "id": "nicotinic-acid",
   "name": "Nicotinic acid (niacin)",
   "brand": "Niaspan; Niacor (limited availability)",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Lipid-lowering agents",
   "sub": "Nicotinic acid derivatives",
   "verified": "",
   "ind": [
@@ -11186,7 +11331,8 @@
   "id": "ivabradine",
   "name": "Ivabradine",
   "brand": "Coralan; Procoralan",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Anti-anginal agents",
   "sub": "If channel inhibitors",
   "verified": "",
   "ind": [
@@ -11272,7 +11418,8 @@
   "id": "ranolazine",
   "name": "Ranolazine",
   "brand": "Ranexa",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Anti-anginal agents",
   "sub": "Late sodium current inhibitors",
   "verified": "",
   "ind": [
@@ -11356,7 +11503,8 @@
   "id": "nicorandil",
   "name": "Nicorandil",
   "brand": "Ikorel",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Anti-anginal agents",
   "sub": "Potassium channel openers / nitrates",
   "verified": "",
   "ind": [
@@ -11431,8 +11579,9 @@
   "id": "quinidine",
   "name": "Quinidine",
   "brand": "Quinidine (limited availability)",
-  "cls": "Cardiovascular",
-  "sub": "Class Ia antiarrhythmics",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "Class Ia",
   "target": "Voltage-gated cardiac sodium channels (Nav1.5)",
   "moa": "Blocks open-state cardiac sodium channels (intermediate dissociation) and potassium channels, ↓ phase 0 slope and conduction velocity and prolonging action potential duration / QT",
   "resp": "↓ ectopic and re-entrant tachyarrhythmias",
@@ -11519,8 +11668,9 @@
   "id": "disopyramide",
   "name": "Disopyramide",
   "brand": "Rythmodan",
-  "cls": "Cardiovascular",
-  "sub": "Class Ia antiarrhythmics",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "Class Ia",
   "target": "Voltage-gated cardiac sodium channels (Nav1.5)",
   "moa": "Blocks open-state cardiac sodium channels (intermediate dissociation) and potassium channels, ↓ phase 0 slope and conduction velocity and prolonging action potential duration / QT",
   "resp": "↓ ectopic and re-entrant tachyarrhythmias",
@@ -11604,8 +11754,9 @@
   "id": "procainamide",
   "name": "Procainamide",
   "brand": "Procainamide (availability varies)",
-  "cls": "Cardiovascular",
-  "sub": "Class Ia antiarrhythmics",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "Class Ia",
   "target": "Voltage-gated cardiac sodium channels (Nav1.5)",
   "moa": "Blocks open-state cardiac sodium channels (intermediate dissociation) and potassium channels, ↓ phase 0 slope and conduction velocity and prolonging action potential duration / QT",
   "resp": "↓ ectopic and re-entrant tachyarrhythmias",
@@ -11687,8 +11838,9 @@
   "id": "lidocaine",
   "name": "Lidocaine (lignocaine)",
   "brand": "Xylocard; Xylocaine",
-  "cls": "Cardiovascular",
-  "sub": "Class Ib antiarrhythmics",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "Class Ib",
   "target": "Voltage-gated cardiac sodium channels (Nav1.5)",
   "verified": "",
   "ind": [
@@ -11770,8 +11922,9 @@
   "id": "flecainide",
   "name": "Flecainide",
   "brand": "Tambocor",
-  "cls": "Cardiovascular",
-  "sub": "Class Ic antiarrhythmics",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "Class Ic",
   "target": "Voltage-gated cardiac sodium channels (Nav1.5)",
   "moa": "Blocks open-state cardiac sodium channels (slow dissociation), markedly ↓ phase 0 slope and conduction velocity with little change in action potential duration",
   "resp": "↓ ectopic and re-entrant tachyarrhythmias",
@@ -11853,8 +12006,9 @@
   "id": "propafenone",
   "name": "Propafenone",
   "brand": "Rytmonorm",
-  "cls": "Cardiovascular",
-  "sub": "Class Ic antiarrhythmics",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "Class Ic",
   "target": "Voltage-gated cardiac sodium channels (Nav1.5)",
   "moa": "Blocks open-state cardiac sodium channels (slow dissociation), markedly ↓ phase 0 slope and conduction velocity with little change in action potential duration",
   "resp": "↓ ectopic and re-entrant tachyarrhythmias",
@@ -11944,8 +12098,9 @@
   "id": "amiodarone",
   "name": "Amiodarone",
   "brand": "Cordarone; Aratac",
-  "cls": "Cardiovascular",
-  "sub": "Class III antiarrhythmics",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "Class III",
   "target": "Cardiac K⁺ channels (IKr); also Na⁺ / Ca²⁺ channels and α / β receptors",
   "verified": "",
   "ind": [
@@ -12041,8 +12196,9 @@
   "id": "dronedarone",
   "name": "Dronedarone",
   "brand": "Multaq",
-  "cls": "Cardiovascular",
-  "sub": "Class III antiarrhythmics",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "Class III",
   "target": "Cardiac K⁺, Na⁺ and Ca²⁺ channels; adrenergic receptors",
   "verified": "",
   "ind": [
@@ -12138,8 +12294,9 @@
   "id": "dofetilide",
   "name": "Dofetilide",
   "brand": "Tikosyn (limited availability)",
-  "cls": "Cardiovascular",
-  "sub": "Class III antiarrhythmics",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "Class III",
   "target": "Cardiac delayed rectifier K⁺ current (IKr)",
   "verified": "",
   "ind": [
@@ -12213,8 +12370,9 @@
   "id": "sotalol",
   "name": "Sotalol",
   "brand": "Sotacor",
-  "cls": "Cardiovascular",
-  "sub": "Class III antiarrhythmics",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "Class III",
   "target": "β-adrenergic receptors; cardiac delayed rectifier K⁺ current (IKr)",
   "verified": "",
   "ind": [
@@ -12301,7 +12459,8 @@
   "id": "digoxin",
   "name": "Digoxin",
   "brand": "Lanoxin",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
   "sub": "Cardiac glycosides",
   "target": "Na⁺/K⁺-ATPase (cardiac myocytes; vagal)",
   "verified": "",
@@ -12393,7 +12552,8 @@
   "id": "adenosine",
   "name": "Adenosine",
   "brand": "Adenocor",
-  "cls": "Cardiovascular",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
   "sub": "Adenosine receptor agonists",
   "target": "Adenosine A1 receptors (AV and SA nodes)",
   "verified": "",
@@ -12475,8 +12635,9 @@
   "id": "isoprenaline",
   "name": "Isoprenaline (isoproterenol)",
   "brand": "Isuprel",
-  "cls": "Cardiovascular",
-  "sub": "β-adrenergic agonists (non-selective)",
+  "family": "Cardiovascular",
+  "cls": "Antiarrhythmics & rhythm-control agents",
+  "sub": "β-adrenergic agonists",
   "target": "β1- and β2-adrenergic receptors",
   "verified": "",
   "ind": [
@@ -12559,7 +12720,8 @@
   "id": "methacholine",
   "name": "Methacholine",
   "brand": "Provocholine",
-  "cls": "Respiratory",
+  "family": "Respiratory & allergy",
+  "cls": "Other respiratory agents",
   "sub": "Bronchoprovocation agents (diagnostic)",
   "target": "Muscarinic M3 receptors (airway smooth muscle)",
   "verified": "",
@@ -12640,8 +12802,9 @@
   "id": "propranolol",
   "name": "Propranolol",
   "brand": "Inderal; Deralin",
-  "cls": "Cardiovascular",
-  "sub": "β-blockers (non-selective)",
+  "family": "Cardiovascular",
+  "cls": "β-blockers",
+  "sub": "Non-selective",
   "target": "β-adrenergic receptors (β1 cardiac; β2 bronchial / vascular)",
   "verified": "",
   "ind": [
@@ -12742,8 +12905,9 @@
   "id": "atenolol",
   "name": "Atenolol",
   "brand": "Tenormin",
-  "cls": "Cardiovascular",
-  "sub": "β-blockers (β1-selective)",
+  "family": "Cardiovascular",
+  "cls": "β-blockers",
+  "sub": "β1-selective",
   "target": "β-adrenergic receptors (β1 cardiac; β2 bronchial / vascular)",
   "moa": "Competitively antagonises β1-adrenergic receptors in the heart, ↓ cAMP, heart rate, contractility, AV conduction and renin release",
   "resp": "↓ heart rate, contractility and BP; ↓ myocardial oxygen demand",
@@ -12831,8 +12995,9 @@
   "id": "bisoprolol",
   "name": "Bisoprolol",
   "brand": "Concor",
-  "cls": "Cardiovascular",
-  "sub": "β-blockers (β1-selective)",
+  "family": "Cardiovascular",
+  "cls": "β-blockers",
+  "sub": "β1-selective",
   "target": "β-adrenergic receptors (β1 cardiac; β2 bronchial / vascular)",
   "moa": "Competitively antagonises β1-adrenergic receptors in the heart, ↓ cAMP, heart rate, contractility, AV conduction and renin release",
   "resp": "↓ heart rate, contractility and BP; ↓ myocardial oxygen demand",
@@ -12919,8 +13084,9 @@
   "id": "metoprolol",
   "name": "Metoprolol",
   "brand": "Betaloc; Lopressor; Toprol-XL",
-  "cls": "Cardiovascular",
-  "sub": "β-blockers (β1-selective)",
+  "family": "Cardiovascular",
+  "cls": "β-blockers",
+  "sub": "β1-selective",
   "target": "β-adrenergic receptors (β1 cardiac; β2 bronchial / vascular)",
   "moa": "Competitively antagonises β1-adrenergic receptors in the heart, ↓ cAMP, heart rate, contractility, AV conduction and renin release",
   "resp": "↓ heart rate, contractility and BP; ↓ myocardial oxygen demand",
@@ -13014,8 +13180,9 @@
   "id": "esmolol",
   "name": "Esmolol",
   "brand": "Brevibloc",
-  "cls": "Cardiovascular",
-  "sub": "β-blockers (β1-selective)",
+  "family": "Cardiovascular",
+  "cls": "β-blockers",
+  "sub": "β1-selective",
   "target": "β-adrenergic receptors (β1 cardiac; β2 bronchial / vascular)",
   "moa": "Competitively antagonises β1-adrenergic receptors in the heart, ↓ cAMP, heart rate, contractility, AV conduction and renin release",
   "resp": "↓ heart rate, contractility and BP; ↓ myocardial oxygen demand",
@@ -13102,8 +13269,9 @@
   "id": "carvedilol",
   "name": "Carvedilol",
   "brand": "Dilatrend; Coreg",
-  "cls": "Cardiovascular",
-  "sub": "β-blockers (non-selective with α1-blockade)",
+  "family": "Cardiovascular",
+  "cls": "β-blockers",
+  "sub": "Non-selective with α1-blockade",
   "target": "β-adrenergic receptors (β1 cardiac; β2 bronchial / vascular); α1-adrenergic receptors (vascular)",
   "moa": "Competitively antagonises β1 and β2 receptors and α1 receptors, ↓ heart rate, contractility and renin release and causing vasodilation (↓ afterload)",
   "resp": "↓ heart rate and BP; vasodilation; ↓ myocardial oxygen demand",
@@ -13209,8 +13377,9 @@
   "id": "labetalol",
   "name": "Labetalol",
   "brand": "Trandate; Presolol",
-  "cls": "Cardiovascular",
-  "sub": "β-blockers (non-selective with α1-blockade)",
+  "family": "Cardiovascular",
+  "cls": "β-blockers",
+  "sub": "Non-selective with α1-blockade",
   "target": "β-adrenergic receptors (β1 cardiac; β2 bronchial / vascular); α1-adrenergic receptors (vascular)",
   "moa": "Competitively antagonises β1 and β2 receptors and α1 receptors, ↓ heart rate, contractility and renin release and causing vasodilation (↓ afterload)",
   "resp": "↓ heart rate and BP; vasodilation; ↓ myocardial oxygen demand",
@@ -13310,8 +13479,9 @@
   "id": "verapamil",
   "name": "Verapamil",
   "brand": "Isoptin; Cordilox; Anpec",
-  "cls": "Cardiovascular",
-  "sub": "Non-dihydropyridine calcium channel blockers",
+  "family": "Cardiovascular",
+  "cls": "Calcium channel blockers",
+  "sub": "Non-dihydropyridine",
   "target": "L-type voltage-gated calcium channels (cardiac nodal tissue, myocardium, vascular smooth muscle)",
   "resp": "↓ AV conduction and heart rate; ↓ BP; ↓ myocardial oxygen demand",
   "contra": [
@@ -13413,8 +13583,9 @@
   "id": "diltiazem",
   "name": "Diltiazem",
   "brand": "Cardizem; Vasocardol",
-  "cls": "Cardiovascular",
-  "sub": "Non-dihydropyridine calcium channel blockers",
+  "family": "Cardiovascular",
+  "cls": "Calcium channel blockers",
+  "sub": "Non-dihydropyridine",
   "target": "L-type voltage-gated calcium channels (cardiac nodal tissue, myocardium, vascular smooth muscle)",
   "resp": "↓ AV conduction and heart rate; ↓ BP; ↓ myocardial oxygen demand",
   "contra": [
@@ -13505,6 +13676,994 @@
    "freq": "TDS (SR OD)",
    "timing": "With food; swallow SR whole",
    "stop": "ECG monitoring for IV use; taper if long-term"
+  }
+ },
+ {
+  "id": "chlorthalidone",
+  "name": "Chlorthalidone",
+  "brand": "Hygroton",
+  "family": "Cardiovascular",
+  "cls": "Diuretics",
+  "sub": "Thiazide and thiazide-like",
+  "target": "Na⁺/Cl⁻ cotransporter (distal convoluted tubule)",
+  "moa": "Inhibits the Na⁺/Cl⁻ cotransporter in the distal convoluted tubule, ↓ sodium and chloride reabsorption, ↑ urinary sodium and water excretion and, long term, ↓ peripheral vascular resistance",
+  "resp": "Mild diuresis; ↓ BP; ↓ urinary calcium excretion",
+  "contra": [
+   "Anuria",
+   "Severe renal impairment (CrCl <30 mL/min)",
+   "Hypersensitivity to thiazides / sulfonamides",
+   "Refractory hypokalaemia, hyponatraemia or hypercalcaemia",
+   "Symptomatic hyperuricaemia / gout (relative)"
+  ],
+  "common": [
+   "Hypokalaemia",
+   "Hyponatraemia",
+   "Hyperuricaemia",
+   "Dizziness / postural hypotension",
+   "Hypomagnesaemia",
+   "Hyperglycaemia"
+  ],
+  "severe": [
+   "Severe hyponatraemia (esp. elderly women)",
+   "Gout flare",
+   "Hypercalcaemia",
+   "Pancreatitis",
+   "Acute angle-closure glaucoma / myopia",
+   "Non-melanoma skin cancer (long term)"
+  ],
+  "lethal": [
+   "Arrhythmia (severe hypokalaemia / hypomagnesaemia)",
+   "Severe hyponatraemia (seizures, cerebral oedema)",
+   "Anaphylaxis"
+  ],
+  "verified": "",
+  "ind": [
+   "Hypertension",
+   "Oedema (HF, renal, hepatic)",
+   "Calcium nephrolithiasis (prevention)"
+  ],
+  "ddi": [
+   {
+    "drug": "Lithium",
+    "mech": "↓ renal lithium clearance ↑ lithium toxicity"
+   },
+   {
+    "drug": "NSAIDs",
+    "mech": "↓ diuretic / antihypertensive effect; ↑ AKI risk"
+   },
+   {
+    "drug": "Digoxin",
+    "mech": "Hypokalaemia ↑ digoxin toxicity"
+   },
+   {
+    "drug": "QT-prolonging drugs",
+    "mech": "Hypokalaemia ↑ torsades risk"
+   },
+   {
+    "drug": "Corticosteroids; loop diuretics; amphotericin B",
+    "mech": "Additive hypokalaemia"
+   },
+   {
+    "drug": "Antidiabetics",
+    "mech": "↓ glycaemic control"
+   },
+   {
+    "drug": "Calcium; vitamin D",
+    "mech": "↓ urinary Ca excretion ↑ hypercalcaemia risk"
+   }
+  ],
+  "sus": {
+   "allergy": "Sulfonamide hypersensitivity (low cross-reactivity)",
+   "sex": "—",
+   "age": "Elderly: ↑ hyponatraemia and hypotension",
+   "genetic": "—",
+   "liver": "Caution; hypokalaemia may precipitate encephalopathy",
+   "kidney": "Retains efficacy in CKD (CrCl 15–30); avoid if anuric",
+   "pregnancy": "Avoid unless essential (↓ plasma volume)",
+   "breastfeeding": "Caution; high doses may ↓ milk supply"
+  },
+  "pk": {
+   "bio": "~65%",
+   "dist": "~75% protein-bound; accumulates in red cells",
+   "met": "Minimal",
+   "t12": "40–60 h",
+   "exc": "Urine (~65% unchanged)"
+  },
+  "reg": {
+   "dose": "12.5–25 mg",
+   "route": "PO",
+   "form": "Tablet",
+   "freq": "OD (morning)",
+   "timing": "With or without food",
+   "stop": "Long term; U&E, urate, glucose and Ca at 1–2 wk after starting, then 6–12-monthly"
+  }
+ },
+ {
+  "id": "indapamide",
+  "name": "Indapamide",
+  "brand": "Natrilix",
+  "family": "Cardiovascular",
+  "cls": "Diuretics",
+  "sub": "Thiazide and thiazide-like",
+  "target": "Na⁺/Cl⁻ cotransporter (distal convoluted tubule)",
+  "moa": "Inhibits the Na⁺/Cl⁻ cotransporter in the distal convoluted tubule, ↓ sodium and chloride reabsorption, ↑ urinary sodium and water excretion and, long term, ↓ peripheral vascular resistance",
+  "resp": "Mild diuresis; ↓ BP; ↓ urinary calcium excretion",
+  "contra": [
+   "Anuria",
+   "Severe renal impairment (CrCl <30 mL/min)",
+   "Hypersensitivity to thiazides / sulfonamides",
+   "Refractory hypokalaemia, hyponatraemia or hypercalcaemia",
+   "Symptomatic hyperuricaemia / gout (relative)",
+   "Hepatic encephalopathy / severe hepatic impairment"
+  ],
+  "common": [
+   "Hypokalaemia",
+   "Hyponatraemia",
+   "Hyperuricaemia",
+   "Dizziness / postural hypotension",
+   "Hypomagnesaemia",
+   "Hyperglycaemia"
+  ],
+  "severe": [
+   "Severe hyponatraemia (esp. elderly women)",
+   "Gout flare",
+   "Hypercalcaemia",
+   "Pancreatitis",
+   "Acute angle-closure glaucoma / myopia",
+   "Non-melanoma skin cancer (long term)"
+  ],
+  "lethal": [
+   "Arrhythmia (severe hypokalaemia / hypomagnesaemia)",
+   "Severe hyponatraemia (seizures, cerebral oedema)",
+   "Anaphylaxis"
+  ],
+  "verified": "",
+  "ind": [
+   "Hypertension",
+   "Stroke recurrence prevention (with perindopril)"
+  ],
+  "ddi": [
+   {
+    "drug": "Lithium",
+    "mech": "↓ renal lithium clearance ↑ lithium toxicity"
+   },
+   {
+    "drug": "NSAIDs",
+    "mech": "↓ diuretic / antihypertensive effect; ↑ AKI risk"
+   },
+   {
+    "drug": "Digoxin",
+    "mech": "Hypokalaemia ↑ digoxin toxicity"
+   },
+   {
+    "drug": "QT-prolonging drugs",
+    "mech": "Hypokalaemia ↑ torsades risk"
+   },
+   {
+    "drug": "Corticosteroids; loop diuretics; amphotericin B",
+    "mech": "Additive hypokalaemia"
+   },
+   {
+    "drug": "Antidiabetics",
+    "mech": "↓ glycaemic control"
+   },
+   {
+    "drug": "Calcium; vitamin D",
+    "mech": "↓ urinary Ca excretion ↑ hypercalcaemia risk"
+   }
+  ],
+  "sus": {
+   "allergy": "Sulfonamide hypersensitivity (low cross-reactivity)",
+   "sex": "—",
+   "age": "Elderly: ↑ hyponatraemia and hypotension",
+   "genetic": "—",
+   "liver": "Contraindicated in severe impairment / encephalopathy",
+   "kidney": "Avoid if CrCl <30 mL/min",
+   "pregnancy": "Avoid unless essential (↓ plasma volume)",
+   "breastfeeding": "Caution; high doses may ↓ milk supply"
+  },
+  "pk": {
+   "bio": "~93%",
+   "dist": "~76–79% protein-bound; binds red cells",
+   "met": "Liver (extensive; CYP3A4)",
+   "t12": "~14–18 h",
+   "exc": "Urine (~70%; ~7% unchanged) and faeces"
+  },
+  "reg": {
+   "dose": "1.25–2.5 mg (SR 1.5 mg)",
+   "route": "PO",
+   "form": "Tablet; SR tablet",
+   "freq": "OD (morning)",
+   "timing": "With or without food",
+   "stop": "Long term; U&E, urate, glucose and Ca at 1–2 wk after starting, then 6–12-monthly"
+  }
+ },
+ {
+  "id": "hydrochlorothiazide",
+  "name": "Hydrochlorothiazide",
+  "brand": "Dithiazide",
+  "family": "Cardiovascular",
+  "cls": "Diuretics",
+  "sub": "Thiazide and thiazide-like",
+  "target": "Na⁺/Cl⁻ cotransporter (distal convoluted tubule)",
+  "moa": "Inhibits the Na⁺/Cl⁻ cotransporter in the distal convoluted tubule, ↓ sodium and chloride reabsorption, ↑ urinary sodium and water excretion and, long term, ↓ peripheral vascular resistance",
+  "resp": "Mild diuresis; ↓ BP; ↓ urinary calcium excretion",
+  "contra": [
+   "Anuria",
+   "Severe renal impairment (CrCl <30 mL/min)",
+   "Hypersensitivity to thiazides / sulfonamides",
+   "Refractory hypokalaemia, hyponatraemia or hypercalcaemia",
+   "Symptomatic hyperuricaemia / gout (relative)"
+  ],
+  "common": [
+   "Hypokalaemia",
+   "Hyponatraemia",
+   "Hyperuricaemia",
+   "Dizziness / postural hypotension",
+   "Hypomagnesaemia",
+   "Hyperglycaemia"
+  ],
+  "severe": [
+   "Severe hyponatraemia (esp. elderly women)",
+   "Gout flare",
+   "Hypercalcaemia",
+   "Pancreatitis",
+   "Acute angle-closure glaucoma / myopia",
+   "Non-melanoma skin cancer (long term)"
+  ],
+  "lethal": [
+   "Arrhythmia (severe hypokalaemia / hypomagnesaemia)",
+   "Severe hyponatraemia (seizures, cerebral oedema)",
+   "Anaphylaxis"
+  ],
+  "verified": "",
+  "ind": [
+   "Hypertension",
+   "Oedema (HF, renal, hepatic)",
+   "Calcium nephrolithiasis (prevention)",
+   "Nephrogenic diabetes insipidus"
+  ],
+  "ddi": [
+   {
+    "drug": "Lithium",
+    "mech": "↓ renal lithium clearance ↑ lithium toxicity"
+   },
+   {
+    "drug": "NSAIDs",
+    "mech": "↓ diuretic / antihypertensive effect; ↑ AKI risk"
+   },
+   {
+    "drug": "Digoxin",
+    "mech": "Hypokalaemia ↑ digoxin toxicity"
+   },
+   {
+    "drug": "QT-prolonging drugs",
+    "mech": "Hypokalaemia ↑ torsades risk"
+   },
+   {
+    "drug": "Corticosteroids; loop diuretics; amphotericin B",
+    "mech": "Additive hypokalaemia"
+   },
+   {
+    "drug": "Antidiabetics",
+    "mech": "↓ glycaemic control"
+   },
+   {
+    "drug": "Calcium; vitamin D",
+    "mech": "↓ urinary Ca excretion ↑ hypercalcaemia risk"
+   }
+  ],
+  "sus": {
+   "allergy": "Sulfonamide hypersensitivity (low cross-reactivity)",
+   "sex": "—",
+   "age": "Elderly: ↑ hyponatraemia and hypotension; sun exposure: ↑ skin cancer risk",
+   "genetic": "—",
+   "liver": "Caution; hypokalaemia may precipitate encephalopathy",
+   "kidney": "Avoid if anuric or CrCl <30 mL/min",
+   "pregnancy": "Avoid unless essential (↓ plasma volume)",
+   "breastfeeding": "Caution; high doses may ↓ milk supply"
+  },
+  "pk": {
+   "bio": "~65–75%",
+   "dist": "~40–68% protein-bound; accumulates in red cells",
+   "met": "Not metabolised",
+   "t12": "6–15 h",
+   "exc": "Urine (>95% unchanged)"
+  },
+  "reg": {
+   "dose": "12.5–25 mg",
+   "route": "PO",
+   "form": "Tablet",
+   "freq": "OD (morning)",
+   "timing": "With or without food",
+   "stop": "Long term; U&E, urate, glucose and Ca at 1–2 wk after starting, then 6–12-monthly"
+  }
+ },
+ {
+  "id": "amlodipine",
+  "name": "Amlodipine",
+  "brand": "Norvasc",
+  "family": "Cardiovascular",
+  "cls": "Calcium channel blockers",
+  "sub": "Dihydropyridine",
+  "target": "L-type voltage-gated calcium channels (vascular smooth muscle)",
+  "moa": "Blocks L-type calcium channels (dihydropyridine site) on vascular smooth muscle, ↓ calcium influx, causing arterial vasodilation and ↓ peripheral vascular resistance with little direct effect on AV conduction or contractility",
+  "resp": "↓ BP and afterload; coronary vasodilation; anti-anginal",
+  "contra": [
+   "Severe aortic stenosis",
+   "Cardiogenic shock / severe hypotension",
+   "Hypersensitivity to dihydropyridines"
+  ],
+  "common": [
+   "Peripheral (ankle) oedema",
+   "Headache",
+   "Flushing",
+   "Dizziness",
+   "Palpitations"
+  ],
+  "severe": [
+   "Severe hypotension / reflex tachycardia",
+   "Angina exacerbation (immediate-release)",
+   "Gingival hyperplasia",
+   "Heart failure exacerbation (rare)",
+   "Hepatotoxicity (rare)"
+  ],
+  "lethal": [
+   "Severe hypotension / MI (immediate-release in ACS)",
+   "Anaphylaxis"
+  ],
+  "verified": "",
+  "ind": [
+   "Hypertension",
+   "Chronic stable angina",
+   "Vasospastic (Prinzmetal) angina"
+  ],
+  "ddi": [
+   {
+    "drug": "Clarithromycin; itraconazole; ritonavir",
+    "mech": "CYP3A4 inhibition ↑ DHP levels (hypotension, oedema)"
+   },
+   {
+    "drug": "Rifampicin; carbamazepine; phenytoin; St John's wort",
+    "mech": "CYP3A4 induction ↓ levels"
+   },
+   {
+    "drug": "Other antihypertensives",
+    "mech": "Additive hypotension"
+   },
+   {
+    "drug": "Simvastatin",
+    "mech": "CYP3A4 inhibition ↑ simvastatin (limit 20 mg)"
+   },
+   {
+    "drug": "Ciclosporin; tacrolimus",
+    "mech": "↑ immunosuppressant levels"
+   }
+  ],
+  "sus": {
+   "allergy": "Dihydropyridine hypersensitivity",
+   "sex": "—",
+   "age": "Elderly: ↑ hypotension / oedema; start low",
+   "genetic": "—",
+   "liver": "↓ dose (start 2.5 mg) in impairment",
+   "kidney": "No adjustment needed",
+   "pregnancy": "Acceptable if indicated (limited data)",
+   "breastfeeding": "Acceptable; low milk levels"
+  },
+  "pk": {
+   "bio": "~64–80%",
+   "dist": "Wide; ~97% protein-bound; Vd ~21 L/kg",
+   "met": "Liver (CYP3A4; inactive metabolites)",
+   "t12": "30–50 h",
+   "exc": "Urine (~60% metabolites; 10% unchanged)"
+  },
+  "reg": {
+   "dose": "2.5–10 mg",
+   "route": "PO",
+   "form": "Tablet",
+   "freq": "OD",
+   "timing": "With or without food",
+   "stop": "Long term; oedema is dose-related; taper not required"
+  }
+ },
+ {
+  "id": "nifedipine",
+  "name": "Nifedipine",
+  "brand": "Adalat; Adalat Oros",
+  "family": "Cardiovascular",
+  "cls": "Calcium channel blockers",
+  "sub": "Dihydropyridine",
+  "target": "L-type voltage-gated calcium channels (vascular smooth muscle)",
+  "moa": "Blocks L-type calcium channels (dihydropyridine site) on vascular smooth muscle, ↓ calcium influx, causing arterial vasodilation and ↓ peripheral vascular resistance with little direct effect on AV conduction or contractility",
+  "resp": "↓ BP and afterload; coronary vasodilation; anti-anginal",
+  "contra": [
+   "Severe aortic stenosis",
+   "Cardiogenic shock / severe hypotension",
+   "Hypersensitivity to dihydropyridines",
+   "Unstable angina / acute MI (immediate-release)"
+  ],
+  "common": [
+   "Peripheral (ankle) oedema",
+   "Headache",
+   "Flushing",
+   "Dizziness",
+   "Palpitations"
+  ],
+  "severe": [
+   "Severe hypotension / reflex tachycardia",
+   "Angina exacerbation (immediate-release)",
+   "Gingival hyperplasia",
+   "Heart failure exacerbation (rare)",
+   "Hepatotoxicity (rare)"
+  ],
+  "lethal": [
+   "Severe hypotension / MI (immediate-release in ACS)",
+   "Anaphylaxis"
+  ],
+  "verified": "",
+  "ind": [
+   "Hypertension (ER)",
+   "Chronic stable angina",
+   "Raynaud phenomenon",
+   "Pre-term labour (tocolysis) / hypertension in pregnancy"
+  ],
+  "ddi": [
+   {
+    "drug": "Clarithromycin; itraconazole; ritonavir",
+    "mech": "CYP3A4 inhibition ↑ DHP levels (hypotension, oedema)"
+   },
+   {
+    "drug": "Rifampicin; carbamazepine; phenytoin; St John's wort",
+    "mech": "CYP3A4 induction ↓ levels"
+   },
+   {
+    "drug": "Other antihypertensives",
+    "mech": "Additive hypotension"
+   },
+   {
+    "drug": "Grapefruit juice",
+    "mech": "CYP3A4 inhibition ↑ nifedipine levels"
+   },
+   {
+    "drug": "β-blockers",
+    "mech": "Additive hypotension; heart failure"
+   },
+   {
+    "drug": "Magnesium sulfate",
+    "mech": "Additive neuromuscular blockade / hypotension"
+   }
+  ],
+  "sus": {
+   "allergy": "Dihydropyridine hypersensitivity",
+   "sex": "—",
+   "age": "Elderly: ↑ hypotension / oedema; start low",
+   "genetic": "—",
+   "liver": "↓ dose; avoid in severe impairment",
+   "kidney": "No adjustment needed",
+   "pregnancy": "Acceptable if indicated (used for hypertension and tocolysis)",
+   "breastfeeding": "Acceptable; low milk levels"
+  },
+  "pk": {
+   "bio": "~45–70% (IR; first pass)",
+   "dist": "~95% protein-bound",
+   "met": "Liver (CYP3A4; inactive metabolites)",
+   "t12": "2–5 h (IR); ~7 h (ER)",
+   "exc": "Urine (~80% metabolites)"
+  },
+  "reg": {
+   "dose": "30–90 mg (ER); 10–20 mg TDS (IR; avoid for hypertension)",
+   "route": "PO",
+   "form": "ER tablet; capsule",
+   "freq": "OD (ER)",
+   "timing": "Swallow whole; avoid grapefruit",
+   "stop": "Long term; avoid immediate-release for hypertension / ACS"
+  }
+ },
+ {
+  "id": "lisinopril",
+  "name": "Lisinopril",
+  "brand": "Zestril; Prinivil",
+  "family": "Cardiovascular",
+  "cls": "RAAS inhibitors",
+  "sub": "ACE inhibitors",
+  "target": "Angiotensin-converting enzyme (ACE; kininase II)",
+  "moa": "Inhibits ACE, ↓ conversion of angiotensin I to angiotensin II and ↓ bradykinin breakdown, causing vasodilation, ↓ aldosterone secretion and ↓ sodium and water retention",
+  "resp": "↓ BP and afterload; ↓ cardiac remodelling; renoprotection",
+  "ind": [
+   "Hypertension",
+   "Heart failure (HFrEF)",
+   "Post-MI LV dysfunction",
+   "Diabetic / proteinuric CKD",
+   "CV risk reduction (high-risk patients)"
+  ],
+  "contra": [
+   "Previous angioedema (ACE inhibitor-related, hereditary or idiopathic)",
+   "Pregnancy",
+   "Bilateral renal artery stenosis",
+   "Concurrent sacubitril / valsartan (36 h washout)",
+   "Hypersensitivity to ACE inhibitors"
+  ],
+  "common": [
+   "Dry cough (bradykinin)",
+   "Dizziness / hypotension",
+   "Mild hyperkalaemia",
+   "Small ↑ creatinine",
+   "Headache"
+  ],
+  "severe": [
+   "Angioedema",
+   "Hyperkalaemia",
+   "AKI (renal artery stenosis, volume depletion)",
+   "Symptomatic hypotension (first dose)",
+   "Neutropenia / agranulocytosis (rare)",
+   "Cholestatic hepatitis (rare)",
+   "Fetal toxicity"
+  ],
+  "lethal": [
+   "Airway angioedema",
+   "Severe hyperkalaemia (arrhythmia)",
+   "Fulminant hepatic necrosis (rare)"
+  ],
+  "verified": "",
+  "ddi": [
+   {
+    "drug": "Potassium supplements; spironolactone; amiloride; trimethoprim",
+    "mech": "Additive ↓ K⁺ excretion ↑ hyperkalaemia"
+   },
+   {
+    "drug": "NSAIDs",
+    "mech": "↓ antihypertensive effect; AKI risk ('triple whammy' with diuretic)"
+   },
+   {
+    "drug": "Lithium",
+    "mech": "↓ renal lithium clearance ↑ toxicity"
+   },
+   {
+    "drug": "Diuretics",
+    "mech": "Additive hypotension (first dose); AKI"
+   },
+   {
+    "drug": "Sacubitril / valsartan",
+    "mech": "↑ angioedema risk (contraindicated)"
+   },
+   {
+    "drug": "Sirolimus; everolimus; DPP-4 inhibitors",
+    "mech": "↑ angioedema risk"
+   },
+   {
+    "drug": "ARBs; aliskiren",
+    "mech": "Dual RAS blockade ↑ hyperkalaemia / AKI"
+   },
+   {
+    "drug": "Allopurinol",
+    "mech": "↑ hypersensitivity reactions"
+   }
+  ],
+  "sus": {
+   "allergy": "ACE inhibitor hypersensitivity; angioedema history",
+   "sex": "—",
+   "age": "Elderly: ↑ hypotension and AKI",
+   "genetic": "African ancestry: ↓ BP response, ↑ angioedema risk; hereditary angioedema: contraindicated",
+   "liver": "No hepatic activation needed (not a prodrug)",
+   "kidney": "↓ dose if CrCl <30–40 mL/min; monitor K⁺ and creatinine",
+   "pregnancy": "Avoid (contraindicated: fetal renal toxicity)",
+   "breastfeeding": "Caution; enalapril / captopril preferred"
+  },
+  "pk": {
+   "bio": "~25% (6–60%)",
+   "dist": "Not protein-bound",
+   "met": "Not metabolised",
+   "t12": "~12 h effective; terminal ~30 h",
+   "exc": "Urine (100% unchanged)"
+  },
+  "reg": {
+   "dose": "5–40 mg (HF: start 2.5–5 mg)",
+   "route": "PO",
+   "form": "Tablet",
+   "freq": "OD",
+   "timing": "With or without food",
+   "stop": "Check K⁺ and creatinine at 1–2 wk; long term; stop if pregnant; accept creatinine rise ≤30%"
+  }
+ },
+ {
+  "id": "ramipril",
+  "name": "Ramipril",
+  "brand": "Tritace",
+  "family": "Cardiovascular",
+  "cls": "RAAS inhibitors",
+  "sub": "ACE inhibitors",
+  "target": "Angiotensin-converting enzyme (ACE; kininase II)",
+  "moa": "Inhibits ACE, ↓ conversion of angiotensin I to angiotensin II and ↓ bradykinin breakdown, causing vasodilation, ↓ aldosterone secretion and ↓ sodium and water retention",
+  "resp": "↓ BP and afterload; ↓ cardiac remodelling; renoprotection",
+  "ind": [
+   "Hypertension",
+   "Heart failure (HFrEF)",
+   "Post-MI LV dysfunction",
+   "Diabetic / proteinuric CKD",
+   "CV risk reduction (high-risk patients)"
+  ],
+  "contra": [
+   "Previous angioedema (ACE inhibitor-related, hereditary or idiopathic)",
+   "Pregnancy",
+   "Bilateral renal artery stenosis",
+   "Concurrent sacubitril / valsartan (36 h washout)",
+   "Hypersensitivity to ACE inhibitors"
+  ],
+  "common": [
+   "Dry cough (bradykinin)",
+   "Dizziness / hypotension",
+   "Mild hyperkalaemia",
+   "Small ↑ creatinine",
+   "Headache"
+  ],
+  "severe": [
+   "Angioedema",
+   "Hyperkalaemia",
+   "AKI (renal artery stenosis, volume depletion)",
+   "Symptomatic hypotension (first dose)",
+   "Neutropenia / agranulocytosis (rare)",
+   "Cholestatic hepatitis (rare)",
+   "Fetal toxicity"
+  ],
+  "lethal": [
+   "Airway angioedema",
+   "Severe hyperkalaemia (arrhythmia)",
+   "Fulminant hepatic necrosis (rare)"
+  ],
+  "verified": "",
+  "ddi": [
+   {
+    "drug": "Potassium supplements; spironolactone; amiloride; trimethoprim",
+    "mech": "Additive ↓ K⁺ excretion ↑ hyperkalaemia"
+   },
+   {
+    "drug": "NSAIDs",
+    "mech": "↓ antihypertensive effect; AKI risk ('triple whammy' with diuretic)"
+   },
+   {
+    "drug": "Lithium",
+    "mech": "↓ renal lithium clearance ↑ toxicity"
+   },
+   {
+    "drug": "Diuretics",
+    "mech": "Additive hypotension (first dose); AKI"
+   },
+   {
+    "drug": "Sacubitril / valsartan",
+    "mech": "↑ angioedema risk (contraindicated)"
+   },
+   {
+    "drug": "Sirolimus; everolimus; DPP-4 inhibitors",
+    "mech": "↑ angioedema risk"
+   },
+   {
+    "drug": "ARBs; aliskiren",
+    "mech": "Dual RAS blockade ↑ hyperkalaemia / AKI"
+   },
+   {
+    "drug": "Allopurinol",
+    "mech": "↑ hypersensitivity reactions"
+   }
+  ],
+  "sus": {
+   "allergy": "ACE inhibitor hypersensitivity; angioedema history",
+   "sex": "—",
+   "age": "Elderly: ↑ hypotension and AKI",
+   "genetic": "African ancestry: ↓ BP response, ↑ angioedema risk; hereditary angioedema: contraindicated",
+   "liver": "Prodrug: needs hepatic activation; caution in impairment",
+   "kidney": "↓ dose if CrCl <30–40 mL/min; monitor K⁺ and creatinine",
+   "pregnancy": "Avoid (contraindicated: fetal renal toxicity)",
+   "breastfeeding": "Caution; enalapril / captopril preferred"
+  },
+  "pk": {
+   "bio": "~28% (ramiprilat ~44%)",
+   "dist": "~73% protein-bound (ramiprilat ~56%)",
+   "met": "Liver (esterases → active ramiprilat)",
+   "t12": "13–17 h (ramiprilat terminal >50 h)",
+   "exc": "Urine (~60%) and faeces (~40%)"
+  },
+  "reg": {
+   "dose": "2.5–10 mg (HF: start 1.25 mg)",
+   "route": "PO",
+   "form": "Tablet; capsule",
+   "freq": "OD–BD",
+   "timing": "With or without food",
+   "stop": "Check K⁺ and creatinine at 1–2 wk; long term; stop if pregnant; accept creatinine rise ≤30%"
+  }
+ },
+ {
+  "id": "perindopril",
+  "name": "Perindopril",
+  "brand": "Coversyl",
+  "family": "Cardiovascular",
+  "cls": "RAAS inhibitors",
+  "sub": "ACE inhibitors",
+  "target": "Angiotensin-converting enzyme (ACE; kininase II)",
+  "moa": "Inhibits ACE, ↓ conversion of angiotensin I to angiotensin II and ↓ bradykinin breakdown, causing vasodilation, ↓ aldosterone secretion and ↓ sodium and water retention",
+  "resp": "↓ BP and afterload; ↓ cardiac remodelling; renoprotection",
+  "ind": [
+   "Hypertension",
+   "Heart failure (HFrEF)",
+   "Post-MI LV dysfunction",
+   "Diabetic / proteinuric CKD",
+   "CV risk reduction (high-risk patients)"
+  ],
+  "contra": [
+   "Previous angioedema (ACE inhibitor-related, hereditary or idiopathic)",
+   "Pregnancy",
+   "Bilateral renal artery stenosis",
+   "Concurrent sacubitril / valsartan (36 h washout)",
+   "Hypersensitivity to ACE inhibitors"
+  ],
+  "common": [
+   "Dry cough (bradykinin)",
+   "Dizziness / hypotension",
+   "Mild hyperkalaemia",
+   "Small ↑ creatinine",
+   "Headache"
+  ],
+  "severe": [
+   "Angioedema",
+   "Hyperkalaemia",
+   "AKI (renal artery stenosis, volume depletion)",
+   "Symptomatic hypotension (first dose)",
+   "Neutropenia / agranulocytosis (rare)",
+   "Cholestatic hepatitis (rare)",
+   "Fetal toxicity"
+  ],
+  "lethal": [
+   "Airway angioedema",
+   "Severe hyperkalaemia (arrhythmia)",
+   "Fulminant hepatic necrosis (rare)"
+  ],
+  "verified": "",
+  "ddi": [
+   {
+    "drug": "Potassium supplements; spironolactone; amiloride; trimethoprim",
+    "mech": "Additive ↓ K⁺ excretion ↑ hyperkalaemia"
+   },
+   {
+    "drug": "NSAIDs",
+    "mech": "↓ antihypertensive effect; AKI risk ('triple whammy' with diuretic)"
+   },
+   {
+    "drug": "Lithium",
+    "mech": "↓ renal lithium clearance ↑ toxicity"
+   },
+   {
+    "drug": "Diuretics",
+    "mech": "Additive hypotension (first dose); AKI"
+   },
+   {
+    "drug": "Sacubitril / valsartan",
+    "mech": "↑ angioedema risk (contraindicated)"
+   },
+   {
+    "drug": "Sirolimus; everolimus; DPP-4 inhibitors",
+    "mech": "↑ angioedema risk"
+   },
+   {
+    "drug": "ARBs; aliskiren",
+    "mech": "Dual RAS blockade ↑ hyperkalaemia / AKI"
+   },
+   {
+    "drug": "Allopurinol",
+    "mech": "↑ hypersensitivity reactions"
+   }
+  ],
+  "sus": {
+   "allergy": "ACE inhibitor hypersensitivity; angioedema history",
+   "sex": "—",
+   "age": "Elderly: ↑ hypotension and AKI",
+   "genetic": "African ancestry: ↓ BP response, ↑ angioedema risk; hereditary angioedema: contraindicated",
+   "liver": "Prodrug: needs hepatic activation; caution in impairment",
+   "kidney": "↓ dose if CrCl <30–40 mL/min; monitor K⁺ and creatinine",
+   "pregnancy": "Avoid (contraindicated: fetal renal toxicity)",
+   "breastfeeding": "Caution; enalapril / captopril preferred"
+  },
+  "pk": {
+   "bio": "~24% as perindoprilat (↓ with food)",
+   "dist": "~20% protein-bound (perindoprilat)",
+   "met": "Liver (esterases → active perindoprilat)",
+   "t12": "~1 h (perindopril); 17 h (perindoprilat)",
+   "exc": "Urine (~75% as perindoprilat)"
+  },
+  "reg": {
+   "dose": "2.5–10 mg",
+   "route": "PO",
+   "form": "Tablet",
+   "freq": "OD (morning)",
+   "timing": "Before food",
+   "stop": "Check K⁺ and creatinine at 1–2 wk; long term; stop if pregnant; accept creatinine rise ≤30%"
+  }
+ },
+ {
+  "id": "losartan",
+  "name": "Losartan",
+  "brand": "Cozaar",
+  "family": "Cardiovascular",
+  "cls": "RAAS inhibitors",
+  "sub": "Angiotensin II receptor blockers (ARBs)",
+  "target": "Angiotensin II type 1 (AT1) receptor",
+  "moa": "Selectively blocks AT1 receptors, preventing angiotensin II-mediated vasoconstriction, aldosterone release and sodium retention without ↑ bradykinin",
+  "resp": "↓ BP and afterload; renoprotection; no ACE-inhibitor cough",
+  "contra": [
+   "Pregnancy",
+   "Bilateral renal artery stenosis",
+   "Concurrent aliskiren (diabetes / renal impairment)",
+   "Hypersensitivity to ARBs"
+  ],
+  "common": [
+   "Dizziness",
+   "Mild hyperkalaemia",
+   "Small ↑ creatinine",
+   "Hypotension",
+   "Fatigue"
+  ],
+  "severe": [
+   "Hyperkalaemia",
+   "AKI",
+   "Angioedema (rare)",
+   "Symptomatic hypotension (first dose)",
+   "Fetal toxicity",
+   "Hepatotoxicity (rare)"
+  ],
+  "lethal": [
+   "Severe hyperkalaemia (arrhythmia)",
+   "Airway angioedema (rare)",
+   "Anaphylaxis"
+  ],
+  "verified": "",
+  "ind": [
+   "Hypertension",
+   "Diabetic nephropathy (type 2 diabetes)",
+   "Heart failure (ACE inhibitor-intolerant)",
+   "Stroke prevention in LV hypertrophy"
+  ],
+  "ddi": [
+   {
+    "drug": "Potassium supplements; spironolactone; amiloride; trimethoprim",
+    "mech": "Additive ↓ K⁺ excretion ↑ hyperkalaemia"
+   },
+   {
+    "drug": "NSAIDs",
+    "mech": "↓ antihypertensive effect; AKI risk ('triple whammy' with diuretic)"
+   },
+   {
+    "drug": "Lithium",
+    "mech": "↓ renal lithium clearance ↑ toxicity"
+   },
+   {
+    "drug": "Diuretics",
+    "mech": "Additive hypotension (first dose); AKI"
+   },
+   {
+    "drug": "ACE inhibitors; aliskiren",
+    "mech": "Dual RAS blockade ↑ hyperkalaemia / AKI"
+   },
+   {
+    "drug": "Rifampicin; fluconazole",
+    "mech": "CYP2C9 / 3A4 modulation alters active metabolite (fluconazole ↓ efficacy)"
+   }
+  ],
+  "sus": {
+   "allergy": "ARB hypersensitivity",
+   "sex": "Female of childbearing potential: effective contraception",
+   "age": "Elderly: ↑ hypotension and AKI",
+   "genetic": "African ancestry: ↓ BP response (monotherapy)",
+   "liver": "↓ dose in impairment; caution in biliary obstruction",
+   "kidney": "Monitor K⁺ and creatinine; caution in renal artery stenosis",
+   "pregnancy": "Avoid (contraindicated: fetal toxicity)",
+   "breastfeeding": "Avoid (limited data)"
+  },
+  "pk": {
+   "bio": "~33% (first pass)",
+   "dist": "~99% protein-bound",
+   "met": "Liver (CYP2C9, 3A4 → active EXP3174)",
+   "t12": "~2 h (EXP3174 6–9 h)",
+   "exc": "Urine (~35%) and faeces (~60%; bile)"
+  },
+  "reg": {
+   "dose": "25–100 mg",
+   "route": "PO",
+   "form": "Tablet",
+   "freq": "OD–BD",
+   "timing": "With or without food",
+   "stop": "Check K⁺ and creatinine at 1–2 wk; long term; stop if pregnant"
+  }
+ },
+ {
+  "id": "valsartan",
+  "name": "Valsartan",
+  "brand": "Diovan",
+  "family": "Cardiovascular",
+  "cls": "RAAS inhibitors",
+  "sub": "Angiotensin II receptor blockers (ARBs)",
+  "target": "Angiotensin II type 1 (AT1) receptor",
+  "moa": "Selectively blocks AT1 receptors, preventing angiotensin II-mediated vasoconstriction, aldosterone release and sodium retention without ↑ bradykinin",
+  "resp": "↓ BP and afterload; renoprotection; no ACE-inhibitor cough",
+  "contra": [
+   "Pregnancy",
+   "Bilateral renal artery stenosis",
+   "Concurrent aliskiren (diabetes / renal impairment)",
+   "Hypersensitivity to ARBs"
+  ],
+  "common": [
+   "Dizziness",
+   "Mild hyperkalaemia",
+   "Small ↑ creatinine",
+   "Hypotension",
+   "Fatigue"
+  ],
+  "severe": [
+   "Hyperkalaemia",
+   "AKI",
+   "Angioedema (rare)",
+   "Symptomatic hypotension (first dose)",
+   "Fetal toxicity",
+   "Hepatotoxicity (rare)"
+  ],
+  "lethal": [
+   "Severe hyperkalaemia (arrhythmia)",
+   "Airway angioedema (rare)",
+   "Anaphylaxis"
+  ],
+  "verified": "",
+  "ind": [
+   "Hypertension",
+   "Heart failure (HFrEF)",
+   "Post-MI LV dysfunction"
+  ],
+  "ddi": [
+   {
+    "drug": "Potassium supplements; spironolactone; amiloride; trimethoprim",
+    "mech": "Additive ↓ K⁺ excretion ↑ hyperkalaemia"
+   },
+   {
+    "drug": "NSAIDs",
+    "mech": "↓ antihypertensive effect; AKI risk ('triple whammy' with diuretic)"
+   },
+   {
+    "drug": "Lithium",
+    "mech": "↓ renal lithium clearance ↑ toxicity"
+   },
+   {
+    "drug": "Diuretics",
+    "mech": "Additive hypotension (first dose); AKI"
+   },
+   {
+    "drug": "ACE inhibitors; aliskiren",
+    "mech": "Dual RAS blockade ↑ hyperkalaemia / AKI"
+   },
+   {
+    "drug": "Ciclosporin; rifampicin; ritonavir",
+    "mech": "OATP1B1 / MRP2 inhibition ↑ valsartan levels"
+   }
+  ],
+  "sus": {
+   "allergy": "ARB hypersensitivity",
+   "sex": "Female of childbearing potential: effective contraception",
+   "age": "Elderly: ↑ hypotension and AKI",
+   "genetic": "African ancestry: ↓ BP response (monotherapy)",
+   "liver": "↓ dose in impairment; caution in biliary obstruction",
+   "kidney": "Monitor K⁺ and creatinine; caution in renal artery stenosis",
+   "pregnancy": "Avoid (contraindicated: fetal toxicity)",
+   "breastfeeding": "Avoid (limited data)"
+  },
+  "pk": {
+   "bio": "~25% (↓ with food)",
+   "dist": "~95% protein-bound; Vd ~17 L",
+   "met": "Minimal (~20%)",
+   "t12": "~6 h",
+   "exc": "Faeces (~83%) and urine (~13%)"
+  },
+  "reg": {
+   "dose": "40–320 mg (HF: start 40 mg BD)",
+   "route": "PO",
+   "form": "Tablet; capsule",
+   "freq": "OD–BD",
+   "timing": "With or without food",
+   "stop": "Check K⁺ and creatinine at 1–2 wk; long term; stop if pregnant"
   }
  }
 ]
